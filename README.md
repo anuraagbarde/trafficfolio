@@ -16,9 +16,9 @@ Track views, visitors, clones, stars, forks, referrers, release downloads, and t
 </div>
 
 <!-- TRAFFICFOLIO:START -->
-> Last updated **2026-09-05T12:32:17Z** | Showing **11 public** and **15 archived** repositories | Dataset: **26** owned repositories (private excluded by default) | Window: **30 days**
+> Last updated **2026-09-05T13:42:51Z** | Showing **11 public** and **15 archived** repositories | Dataset: **26** owned repositories (private excluded by default) | Window: **30 days**
 
-<p align="center"><img src="./assets/dashboard.svg?v=2026-09-05T12%3A32%3A17Z" alt="Trafficfolio dashboard" width="100%"></p>
+<p align="center"><img src="./assets/dashboard.svg?v=2026-09-05T13%3A42%3A51Z" alt="Trafficfolio dashboard" width="100%"></p>
 
 ### Public portfolio
 
