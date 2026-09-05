@@ -409,13 +409,14 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
     for index, (name, repository) in enumerate(top_archived):
         y = 574 + index * 55
         view_count = sum_traffic(repository, days)["views"]
-        bar_width = int(145 * view_count / maximum_archived_views)
+        bar_width = int(110 * view_count / maximum_archived_views)
         archived_rows.append(
             f'<text x="720" y="{y + 17}" class="repo">'
-            f'{html.escape(ellipsize(name.split("/", 1)[-1], 30))}</text>'
-            f'<rect x="955" y="{y}" width="145" height="22" rx="6" fill="#21262d"/>'
-            f'<rect x="955" y="{y}" width="{bar_width}" height="22" rx="6" fill="url(#archiveBar)"/>'
-            f'<text x="1120" y="{y + 17}" class="archive">{format_number(view_count)} views</text>'
+            f'{html.escape(ellipsize(name.split("/", 1)[-1], 26))}</text>'
+            f'<rect x="920" y="{y}" width="110" height="22" rx="6" fill="#21262d"/>'
+            f'<rect x="920" y="{y}" width="{bar_width}" height="22" rx="6" fill="url(#archiveBar)"/>'
+            f'<text x="1104" y="{y + 17}" text-anchor="end" class="archive">'
+            f'{format_number(view_count)} views</text>'
         )
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-label="Trafficfolio GitHub analytics dashboard">

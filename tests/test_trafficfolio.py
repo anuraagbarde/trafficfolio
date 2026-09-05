@@ -204,13 +204,14 @@ class TrafficfolioTests(unittest.TestCase):
             [name for name, _ in trafficfolio.archived_repositories(data)],
             ["octocat/archive"],
         )
-        output = trafficfolio.render_markdown(
-            data, trafficfolio.date_window(30, now.date())
-        )
+        days = trafficfolio.date_window(30, now.date())
+        output = trafficfolio.render_markdown(data, days)
         public_section, archived_section = output.split("### Archived portfolio")
         self.assertIn("octocat/public", public_section)
         self.assertNotIn("octocat/archive", public_section)
         self.assertIn("octocat/archive", archived_section)
+        svg = trafficfolio.render_svg(data, days)
+        self.assertIn('text-anchor="end" class="archive"', svg)
 
     def test_private_active_repositories_remain_available_when_collected(self) -> None:
         now = datetime(2026, 9, 5, 12, tzinfo=UTC)
