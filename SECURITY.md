@@ -19,4 +19,6 @@ Trafficfolio uses two separate credentials:
 
 Use a fine-grained personal access token rather than a classic token. For public repositories, grant only read-only Administration permission; source-code access is not required. Private repository collection is disabled by default and additionally requires read-only Contents permission. Rotate the token when it expires or immediately if exposure is suspected.
 
+Third-party workflow code is limited to GitHub-owned Actions pinned to immutable release commit hashes. Dependabot checks those pins for updates weekly.
+
 Forks do not inherit upstream Actions secrets. This is an intentional GitHub security boundary.

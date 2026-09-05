@@ -119,6 +119,30 @@ class TrafficfolioTests(unittest.TestCase):
         self.assertIn("new", updated)
         self.assertNotIn("\nold\n", updated)
 
+    def test_repeated_writes_do_not_append_trailing_blank_lines(self) -> None:
+        now = datetime(2026, 9, 5, 12, tzinfo=UTC)
+        data = trafficfolio.merge_snapshot(
+            trafficfolio.empty_data("octocat"),
+            [repository()],
+            {"octocat/hello-world": snapshot()},
+            now,
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            readme = root / "README.md"
+            readme.write_text(
+                f"# Test\n{trafficfolio.START_MARKER}\npending\n"
+                f"{trafficfolio.END_MARKER}\n",
+                encoding="utf-8",
+            )
+            for _ in range(2):
+                trafficfolio.write_outputs(
+                    data, root / "data.json", readme, root / "assets"
+                )
+            output = readme.read_text(encoding="utf-8")
+        self.assertTrue(output.endswith("\n"))
+        self.assertFalse(output.endswith("\n\n"))
+
     def test_renderer_produces_readme_and_valid_svg(self) -> None:
         now = datetime(2026, 9, 5, 12, tzinfo=UTC)
         data = trafficfolio.merge_snapshot(
@@ -140,6 +164,7 @@ class TrafficfolioTests(unittest.TestCase):
 
         self.assertIn("octocat/hello-world", output)
         self.assertIn("Trending repositories", output)
+        self.assertIn("dashboard.svg?v=2026-09-05T12%3A00%3A00Z", output)
         self.assertTrue(svg.startswith("<svg "))
         self.assertIn("Trafficfolio", svg)
         ET.fromstring(svg)
@@ -189,6 +214,34 @@ class TrafficfolioTests(unittest.TestCase):
         self.assertEqual([item["name"] for item in visible], ["public"])
         self.assertEqual(
             [item["name"] for item in all_owned], ["public", "private"]
+        )
+
+    def test_untrusted_markdown_is_escaped(self) -> None:
+        escaped = trafficfolio.markdown_escape(
+            r"[click](https://attacker.example) <img src=x> | `code`"
+        )
+        self.assertEqual(
+            escaped,
+            r"\[click\]\(https://attacker\.example\) &lt;img src=x&gt; \| \`code\`",
+        )
+
+    def test_popular_paths_are_limited_to_the_expected_repository(self) -> None:
+        repository_url = "https://github.com/octocat/hello-world"
+        self.assertEqual(
+            trafficfolio.popular_path_url(
+                "octocat/hello-world",
+                "/octocat/hello-world/issues/1_(test)",
+                repository_url,
+            ),
+            "https://github.com/octocat/hello-world/issues/1_%28test%29",
+        )
+        self.assertEqual(
+            trafficfolio.popular_path_url(
+                "octocat/hello-world",
+                "/attacker/project/issues/1",
+                repository_url,
+            ),
+            repository_url,
         )
 
 

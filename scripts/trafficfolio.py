@@ -391,7 +391,16 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
 
 
 def markdown_escape(value: str) -> str:
-    return value.replace("|", r"\|").replace("\n", " ")
+    normalized = " ".join(value.splitlines())
+    escaped_html = html.escape(normalized, quote=False)
+    return re.sub(r"([\\`*_[\]{}()#+\-.!|])", r"\\\1", escaped_html)
+
+
+def popular_path_url(repository_name: str, path: str, repository_url: str) -> str:
+    expected_prefix = f"/{repository_name}"
+    if path != expected_prefix and not path.startswith(f"{expected_prefix}/"):
+        return repository_url
+    return f"https://github.com{urllib.parse.quote(path, safe='/%:@-._~')}"
 
 
 def latest_snapshot(repository: dict[str, Any], key: str) -> list[dict[str, Any]]:
@@ -403,6 +412,15 @@ def latest_snapshot(repository: dict[str, Any], key: str) -> list[dict[str, Any]
 
 def render_markdown(data: dict[str, Any], days: list[str]) -> str:
     repositories = active_repositories(data)
+    included_repositories = [
+        repository
+        for repository in data.get("repositories", {}).values()
+        if repository.get("active", True)
+    ]
+    archived_count = sum(
+        bool(repository.get("metadata", {}).get("archived"))
+        for repository in included_repositories
+    )
     ranked = sorted(
         repositories,
         key=lambda item: (
@@ -431,9 +449,14 @@ def render_markdown(data: dict[str, Any], days: list[str]) -> str:
     )
     lines = [
         f"> Last updated **{data.get('updated_at', 'not yet')}** | "
-        f"Tracking **{len(repositories)}** active repositories | Window: **{len(days)} days**",
+        f"Showing **{len(repositories)}** active repositories | "
+        f"Dataset: **{len(included_repositories)}** owned repositories "
+        f"({archived_count} archived hidden; private excluded by default) | "
+        f"Window: **{len(days)} days**",
         "",
-        '<p align="center"><img src="./assets/dashboard.svg" alt="Trafficfolio dashboard" width="100%"></p>',
+        f'<p align="center"><img src="./assets/dashboard.svg?v='
+        f'{urllib.parse.quote(str(data.get("updated_at") or "pending"), safe="")}" '
+        f'alt="Trafficfolio dashboard" width="100%"></p>',
         "",
         "### At a glance",
         "",
@@ -509,8 +532,11 @@ def render_markdown(data: dict[str, Any], days: list[str]) -> str:
     )
     for count, name, path, title in sorted(popular_paths, reverse=True)[:10]:
         label = markdown_escape(title or path)
-        target = f"https://github.com{path}" if path.startswith("/") else (
-            data["repositories"][name]["metadata"]["url"]
+        repository_url = data["repositories"][name]["metadata"]["url"]
+        target = popular_path_url(
+            name,
+            path,
+            repository_url,
         )
         lines.append(
             f"| {markdown_escape(name)} | [{label}]({target}) | {count:,} |"
@@ -549,7 +575,7 @@ def write_outputs(data: dict[str, Any], data_path: Path, readme_path: Path, asse
     (assets_dir / "dashboard.svg").write_text(render_svg(data, days), encoding="utf-8")
     readme = readme_path.read_text(encoding="utf-8")
     readme_path.write_text(
-        replace_dashboard(readme, render_markdown(data, days)) + "\n",
+        replace_dashboard(readme, render_markdown(data, days)).rstrip() + "\n",
         encoding="utf-8",
     )
 

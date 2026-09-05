@@ -16,9 +16,9 @@ Track views, visitors, clones, stars, forks, referrers, release downloads, and t
 </div>
 
 <!-- TRAFFICFOLIO:START -->
-> Last updated **2026-09-05T12:32:17Z** | Tracking **11** active repositories | Window: **30 days**
+> Last updated **2026-09-05T12:32:17Z** | Showing **11** active repositories | Dataset: **26** owned repositories (15 archived hidden; private excluded by default) | Window: **30 days**
 
-<p align="center"><img src="./assets/dashboard.svg" alt="Trafficfolio dashboard" width="100%"></p>
+<p align="center"><img src="./assets/dashboard.svg?v=2026-09-05T12%3A32%3A17Z" alt="Trafficfolio dashboard" width="100%"></p>
 
 ### At a glance
 
@@ -30,16 +30,16 @@ Track views, visitors, clones, stars, forks, referrers, release downloads, and t
 
 | # | Repository | Views | Visitors | Clones | Stars (+30d) | Forks (+30d) | Downloads | Momentum |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | [xzaviourr/multi-agent-trading-platform](https://github.com/xzaviourr/multi-agent-trading-platform) | 11 | 1 | 13 | 0 (+0) | 0 (+0) | 0 | 7.4 |
+| 1 | [xzaviourr/multi\-agent\-trading\-platform](https://github.com/xzaviourr/multi-agent-trading-platform) | 11 | 1 | 13 | 0 (+0) | 0 (+0) | 0 | 7.4 |
 | 2 | [xzaviourr/xzaviourr](https://github.com/xzaviourr/xzaviourr) | 11 | 1 | 15 | 0 (+0) | 0 (+0) | 0 | 7.4 |
-| 3 | [xzaviourr/anshul-sanghi-portfolio](https://github.com/xzaviourr/anshul-sanghi-portfolio) | 2 | 1 | 29 | 0 (+0) | 0 (+0) | 0 | 4.0 |
+| 3 | [xzaviourr/anshul\-sanghi\-portfolio](https://github.com/xzaviourr/anshul-sanghi-portfolio) | 2 | 1 | 29 | 0 (+0) | 0 (+0) | 0 | 4.0 |
 | 4 | [xzaviourr/PacmanWars](https://github.com/xzaviourr/PacmanWars) | 13 | 13 | 6 | 7 (+0) | 3 (+0) | 0 | 1.6 |
-| 5 | [xzaviourr/airbnb-profile-website-generator](https://github.com/xzaviourr/airbnb-profile-website-generator) | 0 | 0 | 0 | 0 (+0) | 0 (+0) | 0 | 1.0 |
-| 6 | [xzaviourr/azure-ai-desktop-agent](https://github.com/xzaviourr/azure-ai-desktop-agent) | 0 | 0 | 2 | 1 (+0) | 1 (+0) | 0 | 1.0 |
-| 7 | [xzaviourr/dependency-aware-learning-framework](https://github.com/xzaviourr/dependency-aware-learning-framework) | 0 | 0 | 2 | 0 (+0) | 0 (+0) | 0 | 1.0 |
-| 8 | [xzaviourr/kubernetes-ml-function-scheduler](https://github.com/xzaviourr/kubernetes-ml-function-scheduler) | 0 | 0 | 1 | 0 (+0) | 0 (+0) | 0 | 1.0 |
-| 9 | [xzaviourr/langgraph-virtual-companion](https://github.com/xzaviourr/langgraph-virtual-companion) | 0 | 0 | 1 | 0 (+0) | 0 (+0) | 0 | 1.0 |
-| 10 | [xzaviourr/pyqt-portfolio-dashboard](https://github.com/xzaviourr/pyqt-portfolio-dashboard) | 0 | 0 | 4 | 0 (+0) | 1 (+0) | 0 | 1.0 |
+| 5 | [xzaviourr/airbnb\-profile\-website\-generator](https://github.com/xzaviourr/airbnb-profile-website-generator) | 0 | 0 | 0 | 0 (+0) | 0 (+0) | 0 | 1.0 |
+| 6 | [xzaviourr/azure\-ai\-desktop\-agent](https://github.com/xzaviourr/azure-ai-desktop-agent) | 0 | 0 | 2 | 1 (+0) | 1 (+0) | 0 | 1.0 |
+| 7 | [xzaviourr/dependency\-aware\-learning\-framework](https://github.com/xzaviourr/dependency-aware-learning-framework) | 0 | 0 | 2 | 0 (+0) | 0 (+0) | 0 | 1.0 |
+| 8 | [xzaviourr/kubernetes\-ml\-function\-scheduler](https://github.com/xzaviourr/kubernetes-ml-function-scheduler) | 0 | 0 | 1 | 0 (+0) | 0 (+0) | 0 | 1.0 |
+| 9 | [xzaviourr/langgraph\-virtual\-companion](https://github.com/xzaviourr/langgraph-virtual-companion) | 0 | 0 | 1 | 0 (+0) | 0 (+0) | 0 | 1.0 |
+| 10 | [xzaviourr/pyqt\-portfolio\-dashboard](https://github.com/xzaviourr/pyqt-portfolio-dashboard) | 0 | 0 | 4 | 0 (+0) | 1 (+0) | 0 | 1.0 |
 
 <details>
 <summary><strong>Top referrers and popular content</strong></summary>
@@ -48,21 +48,21 @@ Track views, visitors, clones, stars, forks, referrers, release downloads, and t
 
 | Source | Views | Unique visitors |
 |---|---:|---:|
-| github.com | 5 | 3 |
+| github\.com | 5 | 3 |
 
 #### Popular content
 
 | Repository | Path | Views |
 |---|---|---:|
-| xzaviourr/xzaviourr | [/tree/agents/github-profile-improvement-analysis](https://github.com/xzaviourr/xzaviourr/tree/agents/github-profile-improvement-analysis) | 5 |
+| xzaviourr/xzaviourr | [/tree/agents/github\-profile\-improvement\-analysis](https://github.com/xzaviourr/xzaviourr/tree/agents/github-profile-improvement-analysis) | 5 |
 | xzaviourr/xzaviourr | [Overview](https://github.com/xzaviourr/xzaviourr) | 4 |
-| xzaviourr/multi-agent-trading-platform | [Overview](https://github.com/xzaviourr/MoneyMaker) | 3 |
-| xzaviourr/multi-agent-trading-platform | [/pull/2](https://github.com/xzaviourr/MoneyMaker/pull/2) | 2 |
-| xzaviourr/anshul-sanghi-portfolio | [Overview](https://github.com/xzaviourr/anshul-sanghi-portfolio) | 2 |
+| xzaviourr/multi\-agent\-trading\-platform | [Overview](https://github.com/xzaviourr/multi-agent-trading-platform) | 3 |
+| xzaviourr/multi\-agent\-trading\-platform | [/pull/2](https://github.com/xzaviourr/multi-agent-trading-platform) | 2 |
+| xzaviourr/anshul\-sanghi\-portfolio | [Overview](https://github.com/xzaviourr/anshul-sanghi-portfolio) | 2 |
 | xzaviourr/xzaviourr | [/pulls](https://github.com/xzaviourr/xzaviourr/pulls) | 1 |
 | xzaviourr/xzaviourr | [/pull/1](https://github.com/xzaviourr/xzaviourr/pull/1) | 1 |
-| xzaviourr/multi-agent-trading-platform | [/tree/master](https://github.com/xzaviourr/MoneyMaker/tree/master) | 1 |
-| xzaviourr/multi-agent-trading-platform | [/compare/main...master](https://github.com/xzaviourr/MoneyMaker/compare/main...master) | 1 |
+| xzaviourr/multi\-agent\-trading\-platform | [/tree/master](https://github.com/xzaviourr/multi-agent-trading-platform) | 1 |
+| xzaviourr/multi\-agent\-trading\-platform | [/compare/main\.\.\.master](https://github.com/xzaviourr/multi-agent-trading-platform) | 1 |
 | xzaviourr/PacmanWars | [/projects](https://github.com/xzaviourr/PacmanWars/projects) | 1 |
 
 </details>
@@ -258,4 +258,3 @@ If Trafficfolio helps you understand your projects, star the upstream repository
 ## License
 
 [MIT](./LICENSE) - use it, fork it, and make it yours.
-
