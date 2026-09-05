@@ -1,33 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Trafficfolio GitHub analytics dashboard">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-label="Trafficfolio GitHub analytics dashboard">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/></linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080b13"/><stop offset=".55" stop-color="#10182b"/><stop offset="1" stop-color="#0b1020"/></linearGradient>
   <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#58a6ff"/><stop offset="1" stop-color="#a371f7"/></linearGradient>
   <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#238636"/><stop offset="1" stop-color="#3fb950"/></linearGradient>
+  <linearGradient id="archiveBar" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9e6a03"/><stop offset="1" stop-color="#f2cc60"/></linearGradient>
+  <radialGradient id="ambient"><stop stop-color="#58a6ff" stop-opacity=".16"/><stop offset="1" stop-color="#58a6ff" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".025"/></pattern>
   <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   <style>
-    .title{font:700 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f0f6fc}
+    .title{font:750 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f0f6fc}
     .subtitle{font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#8b949e}
     .label{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#8b949e;letter-spacing:1px}
     .metric{font:700 31px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f0f6fc}
     .section{font:600 17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#c9d1d9}
-    .repo,.value,.trend{font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#c9d1d9}
-    .value{fill:#8b949e} .trend{fill:#3fb950}
+    .repo,.value,.trend,.archive{font:13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#c9d1d9}
+    .value{fill:#8b949e} .trend{fill:#3fb950;font-weight:600} .archive{fill:#d29922}
+    .pill{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.7px}
   </style>
 </defs>
-<rect width="1200" height="800" rx="18" fill="url(#bg)"/>
-<rect x="1" y="1" width="1198" height="798" rx="17" fill="none" stroke="#30363d"/>
-<circle cx="51" cy="52" r="13" fill="#238636"/><path d="M45 52h12M51 46v12" stroke="#fff" stroke-width="2"/>
-<text x="76" y="59" class="title">Trafficfolio</text>
-<text x="1138" y="57" text-anchor="end" class="subtitle">11 repositories / 30 days</text>
+<rect width="1200" height="860" rx="22" fill="url(#bg)"/>
+<rect width="1200" height="860" rx="22" fill="url(#grid)"/>
+<circle cx="1060" cy="20" r="280" fill="url(#ambient)"/>
+<rect x="1" y="1" width="1198" height="858" rx="21" fill="none" stroke="#30363d"/>
+<circle cx="51" cy="52" r="14" fill="url(#bar)"/><path d="M45 52h12M51 46v12" stroke="#fff" stroke-width="2"/>
+<text x="78" y="60" class="title">Trafficfolio</text>
+<rect x="846" y="34" width="116" height="34" rx="17" fill="#238636" fill-opacity=".16" stroke="#3fb950" stroke-opacity=".45"/>
+<text x="904" y="56" text-anchor="middle" class="pill" fill="#56d364">11 PUBLIC</text>
+<rect x="976" y="34" width="150" height="34" rx="17" fill="#9e6a03" fill-opacity=".14" stroke="#d29922" stroke-opacity=".45"/>
+<text x="1051" y="56" text-anchor="middle" class="pill" fill="#f2cc60">15 ARCHIVED</text>
 <rect x="38" y="100" width="202" height="105" rx="14" fill="#161b22" stroke="#30363d"/><circle cx="62" cy="129" r="5" fill="#58a6ff"/><text x="76" y="134" class="label">VIEWS</text><text x="58" y="181" class="metric">37</text><rect x="260" y="100" width="202" height="105" rx="14" fill="#161b22" stroke="#30363d"/><circle cx="284" cy="129" r="5" fill="#a371f7"/><text x="298" y="134" class="label">VISITORS</text><text x="280" y="181" class="metric">16</text><rect x="482" y="100" width="202" height="105" rx="14" fill="#161b22" stroke="#30363d"/><circle cx="506" cy="129" r="5" fill="#3fb950"/><text x="520" y="134" class="label">CLONES</text><text x="502" y="181" class="metric">73</text><rect x="704" y="100" width="202" height="105" rx="14" fill="#161b22" stroke="#30363d"/><circle cx="728" cy="129" r="5" fill="#f2cc60"/><text x="742" y="134" class="label">STARS</text><text x="724" y="181" class="metric">8</text><rect x="926" y="100" width="202" height="105" rx="14" fill="#161b22" stroke="#30363d"/><circle cx="950" cy="129" r="5" fill="#f778ba"/><text x="964" y="134" class="label">FORKS</text><text x="946" y="181" class="metric">5</text>
 <text x="40" y="256" class="section">Repository traffic</text>
-<text x="1138" y="256" text-anchor="end" class="subtitle">views (blue) / clones (green)</text>
-<line x1="52" y1="410" x2="1148" y2="410" stroke="#21262d"/>
-<line x1="52" y1="340" x2="1148" y2="340" stroke="#21262d"/>
-<line x1="52" y1="270" x2="1148" y2="270" stroke="#21262d"/>
+<text x="1138" y="256" text-anchor="end" class="subtitle">public portfolio / 30 days / views blue / clones green</text>
+<rect x="38" y="274" width="1090" height="168" rx="14" fill="#0d1117" fill-opacity=".62" stroke="#30363d"/>
+<line x1="52" y1="420" x2="1114" y2="420" stroke="#21262d"/>
+<line x1="52" y1="350" x2="1114" y2="350" stroke="#21262d"/>
+<line x1="52" y1="280" x2="1114" y2="280" stroke="#21262d"/>
 <polyline points="52.0,410.0 89.8,410.0 127.6,410.0 165.4,410.0 203.2,410.0 241.0,410.0 278.8,410.0 316.6,410.0 354.3,410.0 392.1,410.0 429.9,410.0 467.7,410.0 505.5,410.0 543.3,410.0 581.1,410.0 618.9,348.1 656.7,410.0 694.5,410.0 732.3,404.4 770.1,410.0 807.9,410.0 845.7,410.0 883.4,410.0 921.2,410.0 959.0,410.0 996.8,275.0 1034.6,410.0 1072.4,410.0 1110.2,404.4 1148.0,410.0" fill="none" stroke="url(#line)" stroke-width="4" stroke-linejoin="round" filter="url(#glow)"/>
 <polyline points="52.0,410.0 89.8,410.0 127.6,410.0 165.4,410.0 203.2,410.0 241.0,410.0 278.8,410.0 316.6,410.0 354.3,410.0 392.1,410.0 429.9,408.2 467.7,410.0 505.5,410.0 543.3,410.0 581.1,408.2 618.9,410.0 656.7,408.2 694.5,408.2 732.3,406.5 770.1,410.0 807.9,410.0 845.7,404.7 883.4,406.5 921.2,410.0 959.0,410.0 996.8,320.0 1034.6,397.6 1072.4,406.5 1110.2,406.5 1148.0,410.0" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round"/>
-<text x="40" y="468" class="section">Trending repositories</text>
-<text x="52" y="523" class="repo">multi-agent-trading-platform</text><rect x="310" y="505" width="460" height="24" rx="6" fill="#21262d"/><rect x="310" y="505" width="389" height="24" rx="6" fill="url(#bar)"/><text x="790" y="523" class="value">11 views</text><text x="1030" y="523" class="trend">score 7.4</text><text x="52" y="571" class="repo">xzaviourr</text><rect x="310" y="553" width="460" height="24" rx="6" fill="#21262d"/><rect x="310" y="553" width="389" height="24" rx="6" fill="url(#bar)"/><text x="790" y="571" class="value">11 views</text><text x="1030" y="571" class="trend">score 7.4</text><text x="52" y="619" class="repo">anshul-sanghi-portfolio</text><rect x="310" y="601" width="460" height="24" rx="6" fill="#21262d"/><rect x="310" y="601" width="70" height="24" rx="6" fill="url(#bar)"/><text x="790" y="619" class="value">2 views</text><text x="1030" y="619" class="trend">score 4.0</text><text x="52" y="667" class="repo">PacmanWars</text><rect x="310" y="649" width="460" height="24" rx="6" fill="#21262d"/><rect x="310" y="649" width="460" height="24" rx="6" fill="url(#bar)"/><text x="790" y="667" class="value">13 views</text><text x="1030" y="667" class="trend">score 1.6</text><text x="52" y="715" class="repo">airbnb-profile-website-generator</text><rect x="310" y="697" width="460" height="24" rx="6" fill="#21262d"/><rect x="310" y="697" width="0" height="24" rx="6" fill="url(#bar)"/><text x="790" y="715" class="value">0 views</text><text x="1030" y="715" class="trend">score 1.0</text>
-<text x="40" y="765" class="subtitle">Updated 2026-09-05T12:32:17Z / data from the GitHub API</text>
+<rect x="38" y="478" width="642" height="310" rx="16" fill="#161b22" fill-opacity=".82" stroke="#30363d"/>
+<circle cx="62" cy="512" r="5" fill="#3fb950"/><text x="76" y="518" class="section">Trending public repositories</text>
+<text x="658" y="518" text-anchor="end" class="subtitle">views / momentum</text>
+<text x="62" y="591" class="repo">multi-agent-trading-platform</text><rect x="332" y="574" width="185" height="22" rx="6" fill="#21262d"/><rect x="332" y="574" width="156" height="22" rx="6" fill="url(#bar)"/><text x="535" y="591" class="value">11 views</text><text x="663" y="591" text-anchor="end" class="trend">7.4</text><text x="62" y="646" class="repo">xzaviourr</text><rect x="332" y="629" width="185" height="22" rx="6" fill="#21262d"/><rect x="332" y="629" width="156" height="22" rx="6" fill="url(#bar)"/><text x="535" y="646" class="value">11 views</text><text x="663" y="646" text-anchor="end" class="trend">7.4</text><text x="62" y="701" class="repo">anshul-sanghi-portfolio</text><rect x="332" y="684" width="185" height="22" rx="6" fill="#21262d"/><rect x="332" y="684" width="28" height="22" rx="6" fill="url(#bar)"/><text x="535" y="701" class="value">2 views</text><text x="663" y="701" text-anchor="end" class="trend">4.0</text><text x="62" y="756" class="repo">PacmanWars</text><rect x="332" y="739" width="185" height="22" rx="6" fill="#21262d"/><rect x="332" y="739" width="185" height="22" rx="6" fill="url(#bar)"/><text x="535" y="756" class="value">13 views</text><text x="663" y="756" text-anchor="end" class="trend">1.6</text>
+<rect x="700" y="478" width="428" height="310" rx="16" fill="#161b22" fill-opacity=".82" stroke="#30363d"/>
+<circle cx="724" cy="512" r="5" fill="#d29922"/><text x="738" y="518" class="section">Archived repository traffic</text>
+<text x="1104" y="518" text-anchor="end" class="subtitle">30-day views</text>
+<text x="720" y="591" class="repo">stock-price-prediction-ml</text><rect x="955" y="574" width="145" height="22" rx="6" fill="#21262d"/><rect x="955" y="574" width="145" height="22" rx="6" fill="url(#archiveBar)"/><text x="1120" y="591" class="archive">14 views</text><text x="720" y="646" class="repo">zerodha-algorithmic-trader</text><rect x="955" y="629" width="145" height="22" rx="6" fill="#21262d"/><rect x="955" y="629" width="41" height="22" rx="6" fill="url(#archiveBar)"/><text x="1120" y="646" class="archive">4 views</text><text x="720" y="701" class="repo">telnet-honeypot</text><rect x="955" y="684" width="145" height="22" rx="6" fill="#21262d"/><rect x="955" y="684" width="10" height="22" rx="6" fill="url(#archiveBar)"/><text x="1120" y="701" class="archive">1 views</text><text x="720" y="756" class="repo">knowledge-graph-healthcare-...</text><rect x="955" y="739" width="145" height="22" rx="6" fill="#21262d"/><rect x="955" y="739" width="10" height="22" rx="6" fill="url(#archiveBar)"/><text x="1120" y="756" class="archive">1 views</text>
+<text x="40" y="826" class="subtitle">Updated 2026-09-05T12:32:17Z / durable data from the GitHub API</text>
 </svg>

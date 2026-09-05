@@ -247,6 +247,30 @@ def active_repositories(data: dict[str, Any]) -> list[tuple[str, dict[str, Any]]
     ]
 
 
+def public_repositories(data: dict[str, Any]) -> list[tuple[str, dict[str, Any]]]:
+    return [
+        (name, repository)
+        for name, repository in active_repositories(data)
+        if not repository.get("metadata", {}).get("private")
+    ]
+
+
+def archived_repositories(data: dict[str, Any]) -> list[tuple[str, dict[str, Any]]]:
+    return [
+        (name, repository)
+        for name, repository in data.get("repositories", {}).items()
+        if repository.get("active", True) and repository.get("metadata", {}).get("archived")
+    ]
+
+
+def private_repositories(data: dict[str, Any]) -> list[tuple[str, dict[str, Any]]]:
+    return [
+        (name, repository)
+        for name, repository in active_repositories(data)
+        if repository.get("metadata", {}).get("private")
+    ]
+
+
 def owned_repositories(
     repositories: list[dict[str, Any]], owner: str, include_private: bool
 ) -> list[dict[str, Any]]:
@@ -266,6 +290,10 @@ def format_number(value: int) -> str:
     return str(value)
 
 
+def ellipsize(value: str, limit: int) -> str:
+    return value if len(value) <= limit else f"{value[: limit - 3]}..."
+
+
 def aggregate_series(
     repositories: list[tuple[str, dict[str, Any]]], days: list[str], key: str
 ) -> list[int]:
@@ -273,6 +301,38 @@ def aggregate_series(
         sum(int(repository.get("traffic", {}).get(day, {}).get(key, 0)) for _, repository in repositories)
         for day in days
     ]
+
+
+def portfolio_totals(
+    repositories: list[tuple[str, dict[str, Any]]], days: list[str]
+) -> dict[str, int]:
+    traffic = {
+        key: sum(sum_traffic(repository, days)[key] for _, repository in repositories)
+        for key in ("views", "unique_views", "clones", "unique_clones")
+    }
+    return {
+        **traffic,
+        "stars": sum(
+            int(repository.get("metadata", {}).get("stars", 0))
+            for _, repository in repositories
+        ),
+        "forks": sum(
+            int(repository.get("metadata", {}).get("forks", 0))
+            for _, repository in repositories
+        ),
+        "subscribers": sum(
+            int(repository.get("metadata", {}).get("subscribers", 0))
+            for _, repository in repositories
+        ),
+        "open_issues": sum(
+            int(repository.get("metadata", {}).get("open_issues", 0))
+            for _, repository in repositories
+        ),
+        "release_downloads": sum(
+            int(repository.get("metadata", {}).get("release_downloads", 0))
+            for _, repository in repositories
+        ),
+    }
 
 
 def svg_polyline(values: list[int], x: int, y: int, width: int, height: int) -> str:
@@ -286,36 +346,14 @@ def svg_polyline(values: list[int], x: int, y: int, width: int, height: int) -> 
 
 
 def render_svg(data: dict[str, Any], days: list[str]) -> str:
-    repositories = active_repositories(data)
-    views = aggregate_series(repositories, days, "views")
-    clones = aggregate_series(repositories, days, "clones")
-    totals = {
-        key: sum(value)
-        for key, value in (
-            ("views", views),
-            ("clones", clones),
-            (
-                "stars",
-                [
-                    int(repository.get("metadata", {}).get("stars", 0))
-                    for _, repository in repositories
-                ],
-            ),
-            (
-                "forks",
-                [
-                    int(repository.get("metadata", {}).get("forks", 0))
-                    for _, repository in repositories
-                ],
-            ),
-        )
-    }
-    unique_views = sum(
-        sum_traffic(repository, days)["unique_views"] for _, repository in repositories
-    )
+    public = public_repositories(data)
+    archived = archived_repositories(data)
+    views = aggregate_series(public, days, "views")
+    clones = aggregate_series(public, days, "clones")
+    totals = portfolio_totals(public, days)
     cards = [
         ("VIEWS", totals["views"], "#58a6ff"),
-        ("VISITORS", unique_views, "#a371f7"),
+        ("VISITORS", totals["unique_views"], "#a371f7"),
         ("CLONES", totals["clones"], "#3fb950"),
         ("STARS", totals["stars"], "#f2cc60"),
         ("FORKS", totals["forks"], "#f778ba"),
@@ -330,62 +368,104 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
             f'<text x="{x + 20}" y="181" class="metric">{format_number(value)}</text>'
         )
 
-    top = sorted(
-        repositories,
+    top_public = sorted(
+        public,
         key=lambda item: (
             trend_score(item[1], days),
             sum_traffic(item[1], days)["views"],
         ),
         reverse=True,
-    )[:5]
-    maximum_top_views = max(
-        (sum_traffic(repository, days)["views"] for _, repository in top), default=1
+    )[:4]
+    top_archived = sorted(
+        archived,
+        key=lambda item: (
+            sum_traffic(item[1], days)["views"],
+            int(item[1].get("metadata", {}).get("stars", 0)),
+        ),
+        reverse=True,
+    )[:4]
+    maximum_public_views = max(
+        (sum_traffic(repository, days)["views"] for _, repository in top_public),
+        default=1,
     ) or 1
-    bars = []
-    for index, (name, repository) in enumerate(top):
-        y = 505 + index * 48
+    maximum_archived_views = max(
+        (sum_traffic(repository, days)["views"] for _, repository in top_archived),
+        default=1,
+    ) or 1
+    public_rows = []
+    for index, (name, repository) in enumerate(top_public):
+        y = 574 + index * 55
         view_count = sum_traffic(repository, days)["views"]
-        bar_width = int(460 * view_count / maximum_top_views)
-        bars.append(
-            f'<text x="52" y="{y + 18}" class="repo">{html.escape(name.split("/", 1)[-1])}</text>'
-            f'<rect x="310" y="{y}" width="460" height="24" rx="6" fill="#21262d"/>'
-            f'<rect x="310" y="{y}" width="{bar_width}" height="24" rx="6" fill="url(#bar)"/>'
-            f'<text x="790" y="{y + 18}" class="value">{format_number(view_count)} views</text>'
-            f'<text x="1030" y="{y + 18}" class="trend">score {trend_score(repository, days):.1f}</text>'
+        bar_width = int(185 * view_count / maximum_public_views)
+        public_rows.append(
+            f'<text x="62" y="{y + 17}" class="repo">'
+            f'{html.escape(ellipsize(name.split("/", 1)[-1], 34))}</text>'
+            f'<rect x="332" y="{y}" width="185" height="22" rx="6" fill="#21262d"/>'
+            f'<rect x="332" y="{y}" width="{bar_width}" height="22" rx="6" fill="url(#bar)"/>'
+            f'<text x="535" y="{y + 17}" class="value">{format_number(view_count)} views</text>'
+            f'<text x="663" y="{y + 17}" text-anchor="end" class="trend">{trend_score(repository, days):.1f}</text>'
+        )
+    archived_rows = []
+    for index, (name, repository) in enumerate(top_archived):
+        y = 574 + index * 55
+        view_count = sum_traffic(repository, days)["views"]
+        bar_width = int(145 * view_count / maximum_archived_views)
+        archived_rows.append(
+            f'<text x="720" y="{y + 17}" class="repo">'
+            f'{html.escape(ellipsize(name.split("/", 1)[-1], 30))}</text>'
+            f'<rect x="955" y="{y}" width="145" height="22" rx="6" fill="#21262d"/>'
+            f'<rect x="955" y="{y}" width="{bar_width}" height="22" rx="6" fill="url(#archiveBar)"/>'
+            f'<text x="1120" y="{y + 17}" class="archive">{format_number(view_count)} views</text>'
         )
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Trafficfolio GitHub analytics dashboard">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-label="Trafficfolio GitHub analytics dashboard">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/></linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080b13"/><stop offset=".55" stop-color="#10182b"/><stop offset="1" stop-color="#0b1020"/></linearGradient>
   <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#58a6ff"/><stop offset="1" stop-color="#a371f7"/></linearGradient>
   <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#238636"/><stop offset="1" stop-color="#3fb950"/></linearGradient>
+  <linearGradient id="archiveBar" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9e6a03"/><stop offset="1" stop-color="#f2cc60"/></linearGradient>
+  <radialGradient id="ambient"><stop stop-color="#58a6ff" stop-opacity=".16"/><stop offset="1" stop-color="#58a6ff" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".025"/></pattern>
   <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   <style>
-    .title{{font:700 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f0f6fc}}
+    .title{{font:750 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f0f6fc}}
     .subtitle{{font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#8b949e}}
     .label{{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#8b949e;letter-spacing:1px}}
     .metric{{font:700 31px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f0f6fc}}
     .section{{font:600 17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#c9d1d9}}
-    .repo,.value,.trend{{font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#c9d1d9}}
-    .value{{fill:#8b949e}} .trend{{fill:#3fb950}}
+    .repo,.value,.trend,.archive{{font:13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#c9d1d9}}
+    .value{{fill:#8b949e}} .trend{{fill:#3fb950;font-weight:600}} .archive{{fill:#d29922}}
+    .pill{{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.7px}}
   </style>
 </defs>
-<rect width="1200" height="800" rx="18" fill="url(#bg)"/>
-<rect x="1" y="1" width="1198" height="798" rx="17" fill="none" stroke="#30363d"/>
-<circle cx="51" cy="52" r="13" fill="#238636"/><path d="M45 52h12M51 46v12" stroke="#fff" stroke-width="2"/>
-<text x="76" y="59" class="title">Trafficfolio</text>
-<text x="1138" y="57" text-anchor="end" class="subtitle">{len(repositories)} repositories / {len(days)} days</text>
+<rect width="1200" height="860" rx="22" fill="url(#bg)"/>
+<rect width="1200" height="860" rx="22" fill="url(#grid)"/>
+<circle cx="1060" cy="20" r="280" fill="url(#ambient)"/>
+<rect x="1" y="1" width="1198" height="858" rx="21" fill="none" stroke="#30363d"/>
+<circle cx="51" cy="52" r="14" fill="url(#bar)"/><path d="M45 52h12M51 46v12" stroke="#fff" stroke-width="2"/>
+<text x="78" y="60" class="title">Trafficfolio</text>
+<rect x="846" y="34" width="116" height="34" rx="17" fill="#238636" fill-opacity=".16" stroke="#3fb950" stroke-opacity=".45"/>
+<text x="904" y="56" text-anchor="middle" class="pill" fill="#56d364">{len(public)} PUBLIC</text>
+<rect x="976" y="34" width="150" height="34" rx="17" fill="#9e6a03" fill-opacity=".14" stroke="#d29922" stroke-opacity=".45"/>
+<text x="1051" y="56" text-anchor="middle" class="pill" fill="#f2cc60">{len(archived)} ARCHIVED</text>
 {''.join(card_markup)}
 <text x="40" y="256" class="section">Repository traffic</text>
-<text x="1138" y="256" text-anchor="end" class="subtitle">views (blue) / clones (green)</text>
-<line x1="52" y1="410" x2="1148" y2="410" stroke="#21262d"/>
-<line x1="52" y1="340" x2="1148" y2="340" stroke="#21262d"/>
-<line x1="52" y1="270" x2="1148" y2="270" stroke="#21262d"/>
+<text x="1138" y="256" text-anchor="end" class="subtitle">public portfolio / {len(days)} days / views blue / clones green</text>
+<rect x="38" y="274" width="1090" height="168" rx="14" fill="#0d1117" fill-opacity=".62" stroke="#30363d"/>
+<line x1="52" y1="420" x2="1114" y2="420" stroke="#21262d"/>
+<line x1="52" y1="350" x2="1114" y2="350" stroke="#21262d"/>
+<line x1="52" y1="280" x2="1114" y2="280" stroke="#21262d"/>
 <polyline points="{svg_polyline(views, 52, 275, 1096, 135)}" fill="none" stroke="url(#line)" stroke-width="4" stroke-linejoin="round" filter="url(#glow)"/>
 <polyline points="{svg_polyline(clones, 52, 320, 1096, 90)}" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round"/>
-<text x="40" y="468" class="section">Trending repositories</text>
-{''.join(bars)}
-<text x="40" y="765" class="subtitle">Updated {html.escape(str(data.get("updated_at") or "not yet"))} / data from the GitHub API</text>
+<rect x="38" y="478" width="642" height="310" rx="16" fill="#161b22" fill-opacity=".82" stroke="#30363d"/>
+<circle cx="62" cy="512" r="5" fill="#3fb950"/><text x="76" y="518" class="section">Trending public repositories</text>
+<text x="658" y="518" text-anchor="end" class="subtitle">views / momentum</text>
+{''.join(public_rows)}
+<rect x="700" y="478" width="428" height="310" rx="16" fill="#161b22" fill-opacity=".82" stroke="#30363d"/>
+<circle cx="724" cy="512" r="5" fill="#d29922"/><text x="738" y="518" class="section">Archived repository traffic</text>
+<text x="1104" y="518" text-anchor="end" class="subtitle">30-day views</text>
+{''.join(archived_rows)}
+<text x="40" y="826" class="subtitle">Updated {html.escape(str(data.get("updated_at") or "not yet"))} / durable data from the GitHub API</text>
 </svg>
 """
 
@@ -411,68 +491,59 @@ def latest_snapshot(repository: dict[str, Any], key: str) -> list[dict[str, Any]
 
 
 def render_markdown(data: dict[str, Any], days: list[str]) -> str:
-    repositories = active_repositories(data)
+    public = public_repositories(data)
+    archived = archived_repositories(data)
+    private = private_repositories(data)
     included_repositories = [
         repository
         for repository in data.get("repositories", {}).values()
         if repository.get("active", True)
     ]
-    archived_count = sum(
-        bool(repository.get("metadata", {}).get("archived"))
-        for repository in included_repositories
-    )
-    ranked = sorted(
-        repositories,
+    ranked_public = sorted(
+        public,
         key=lambda item: (
             trend_score(item[1], days),
             sum_traffic(item[1], days)["views"],
         ),
         reverse=True,
     )
-    totals = {
-        key: sum(sum_traffic(repository, days)[key] for _, repository in repositories)
-        for key in ("views", "unique_views", "clones", "unique_clones")
-    }
-    stars = sum(int(repository.get("metadata", {}).get("stars", 0)) for _, repository in repositories)
-    forks = sum(int(repository.get("metadata", {}).get("forks", 0)) for _, repository in repositories)
-    downloads = sum(
-        int(repository.get("metadata", {}).get("release_downloads", 0))
-        for _, repository in repositories
+    ranked_archived = sorted(
+        archived,
+        key=lambda item: (
+            sum_traffic(item[1], days)["views"],
+            int(item[1].get("metadata", {}).get("stars", 0)),
+        ),
+        reverse=True,
     )
-    subscribers = sum(
-        int(repository.get("metadata", {}).get("subscribers", 0))
-        for _, repository in repositories
-    )
-    open_issues = sum(
-        int(repository.get("metadata", {}).get("open_issues", 0))
-        for _, repository in repositories
-    )
+    public_totals = portfolio_totals(public, days)
+    archived_totals = portfolio_totals(archived, days)
     lines = [
         f"> Last updated **{data.get('updated_at', 'not yet')}** | "
-        f"Showing **{len(repositories)}** active repositories | "
+        f"Showing **{len(public)} public** and **{len(archived)} archived** repositories | "
         f"Dataset: **{len(included_repositories)}** owned repositories "
-        f"({archived_count} archived hidden; private excluded by default) | "
+        f"(private excluded by default) | "
         f"Window: **{len(days)} days**",
         "",
         f'<p align="center"><img src="./assets/dashboard.svg?v='
         f'{urllib.parse.quote(str(data.get("updated_at") or "pending"), safe="")}" '
         f'alt="Trafficfolio dashboard" width="100%"></p>',
         "",
-        "### At a glance",
+        "### Public portfolio",
         "",
         "| Views | Unique visitors | Clones | Unique cloners | Stars | Forks | Subscribers | Open issues/PRs | Downloads |",
         "|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
-        f"| **{totals['views']:,}** | **{totals['unique_views']:,}** | "
-        f"**{totals['clones']:,}** | **{totals['unique_clones']:,}** | "
-        f"**{stars:,}** | **{forks:,}** | **{subscribers:,}** | "
-        f"**{open_issues:,}** | **{downloads:,}** |",
+        f"| **{public_totals['views']:,}** | **{public_totals['unique_views']:,}** | "
+        f"**{public_totals['clones']:,}** | **{public_totals['unique_clones']:,}** | "
+        f"**{public_totals['stars']:,}** | **{public_totals['forks']:,}** | "
+        f"**{public_totals['subscribers']:,}** | **{public_totals['open_issues']:,}** | "
+        f"**{public_totals['release_downloads']:,}** |",
         "",
-        "### Trending repositories",
+        "#### Public repositories",
         "",
         "| # | Repository | Views | Visitors | Clones | Stars (+30d) | Forks (+30d) | Downloads | Momentum |",
         "|---:|---|---:|---:|---:|---:|---:|---:|---:|",
     ]
-    for index, (name, repository) in enumerate(ranked[:10], start=1):
+    for index, (name, repository) in enumerate(ranked_public, start=1):
         metadata = repository["metadata"]
         traffic = sum_traffic(repository, days)
         lines.append(
@@ -483,9 +554,61 @@ def render_markdown(data: dict[str, Any], days: list[str]) -> str:
             f"{metadata['release_downloads']:,} | {trend_score(repository, days):.1f} |"
         )
 
+    lines.extend(
+        [
+            "",
+            "### Archived portfolio",
+            "",
+            "| Views | Unique visitors | Clones | Unique cloners | Stars | Forks | Subscribers | Open issues/PRs | Downloads |",
+            "|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
+            f"| **{archived_totals['views']:,}** | **{archived_totals['unique_views']:,}** | "
+            f"**{archived_totals['clones']:,}** | **{archived_totals['unique_clones']:,}** | "
+            f"**{archived_totals['stars']:,}** | **{archived_totals['forks']:,}** | "
+            f"**{archived_totals['subscribers']:,}** | **{archived_totals['open_issues']:,}** | "
+            f"**{archived_totals['release_downloads']:,}** |",
+            "",
+            "#### Archived repositories",
+            "",
+            "| Repository | Views | Visitors | Clones | Stars | Forks | Downloads |",
+            "|---|---:|---:|---:|---:|---:|---:|",
+        ]
+    )
+    for name, repository in ranked_archived:
+        metadata = repository["metadata"]
+        traffic = sum_traffic(repository, days)
+        lines.append(
+            f"| [{markdown_escape(name)}]({metadata['url']}) | "
+            f"{traffic['views']:,} | {traffic['unique_views']:,} | {traffic['clones']:,} | "
+            f"{metadata['stars']:,} | {metadata['forks']:,} | "
+            f"{metadata['release_downloads']:,} |"
+        )
+    if not ranked_archived:
+        lines.append("| No archived repositories tracked | 0 | 0 | 0 | 0 | 0 | 0 |")
+
+    if private:
+        private_totals = portfolio_totals(private, days)
+        lines.extend(
+            [
+                "",
+                "<details>",
+                f"<summary><strong>Private repositories ({len(private)})</strong></summary>",
+                "",
+                "Private repository reporting is opt-in and should only be used when this "
+                "dashboard repository is also private.",
+                "",
+                "| Repositories | Views | Visitors | Clones | Stars | Forks |",
+                "|---:|---:|---:|---:|---:|---:|",
+                f"| **{len(private)}** | **{private_totals['views']:,}** | "
+                f"**{private_totals['unique_views']:,}** | **{private_totals['clones']:,}** | "
+                f"**{private_totals['stars']:,}** | **{private_totals['forks']:,}** |",
+                "",
+                "</details>",
+            ]
+        )
+
     referrers: dict[str, dict[str, int]] = {}
     popular_paths: list[tuple[int, str, str, str]] = []
-    for name, repository in repositories:
+    for name, repository in [*public, *archived, *private]:
         for item in latest_snapshot(repository, "referrer_snapshots"):
             current = referrers.setdefault(item["referrer"], {"count": 0, "uniques": 0})
             current["count"] += int(item.get("count", 0))

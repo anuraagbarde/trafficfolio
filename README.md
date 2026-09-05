@@ -16,17 +16,17 @@ Track views, visitors, clones, stars, forks, referrers, release downloads, and t
 </div>
 
 <!-- TRAFFICFOLIO:START -->
-> Last updated **2026-09-05T12:32:17Z** | Showing **11** active repositories | Dataset: **26** owned repositories (15 archived hidden; private excluded by default) | Window: **30 days**
+> Last updated **2026-09-05T12:32:17Z** | Showing **11 public** and **15 archived** repositories | Dataset: **26** owned repositories (private excluded by default) | Window: **30 days**
 
 <p align="center"><img src="./assets/dashboard.svg?v=2026-09-05T12%3A32%3A17Z" alt="Trafficfolio dashboard" width="100%"></p>
 
-### At a glance
+### Public portfolio
 
 | Views | Unique visitors | Clones | Unique cloners | Stars | Forks | Subscribers | Open issues/PRs | Downloads |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | **37** | **16** | **73** | **46** | **8** | **5** | **5** | **2** | **0** |
 
-### Trending repositories
+#### Public repositories
 
 | # | Repository | Views | Visitors | Clones | Stars (+30d) | Forks (+30d) | Downloads | Momentum |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|
@@ -40,6 +40,33 @@ Track views, visitors, clones, stars, forks, referrers, release downloads, and t
 | 8 | [xzaviourr/kubernetes\-ml\-function\-scheduler](https://github.com/xzaviourr/kubernetes-ml-function-scheduler) | 0 | 0 | 1 | 0 (+0) | 0 (+0) | 0 | 1.0 |
 | 9 | [xzaviourr/langgraph\-virtual\-companion](https://github.com/xzaviourr/langgraph-virtual-companion) | 0 | 0 | 1 | 0 (+0) | 0 (+0) | 0 | 1.0 |
 | 10 | [xzaviourr/pyqt\-portfolio\-dashboard](https://github.com/xzaviourr/pyqt-portfolio-dashboard) | 0 | 0 | 4 | 0 (+0) | 1 (+0) | 0 | 1.0 |
+| 11 | [xzaviourr/trafficfolio](https://github.com/xzaviourr/trafficfolio) | 0 | 0 | 0 | 0 (+0) | 0 (+0) | 0 | 1.0 |
+
+### Archived portfolio
+
+| Views | Unique visitors | Clones | Unique cloners | Stars | Forks | Subscribers | Open issues/PRs | Downloads |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **20** | **5** | **24** | **23** | **21** | **8** | **12** | **1** | **0** |
+
+#### Archived repositories
+
+| Repository | Views | Visitors | Clones | Stars | Forks | Downloads |
+|---|---:|---:|---:|---:|---:|---:|
+| [xzaviourr/stock\-price\-prediction\-ml](https://github.com/xzaviourr/stock-price-prediction-ml) | 14 | 2 | 0 | 0 | 1 | 0 |
+| [xzaviourr/zerodha\-algorithmic\-trader](https://github.com/xzaviourr/zerodha-algorithmic-trader) | 4 | 1 | 0 | 8 | 4 | 0 |
+| [xzaviourr/telnet\-honeypot](https://github.com/xzaviourr/telnet-honeypot) | 1 | 1 | 3 | 5 | 2 | 0 |
+| [xzaviourr/knowledge\-graph\-healthcare\-chatbot](https://github.com/xzaviourr/knowledge-graph-healthcare-chatbot) | 1 | 1 | 0 | 3 | 0 | 0 |
+| [xzaviourr/internship\-opportunity\-tracker](https://github.com/xzaviourr/internship-opportunity-tracker) | 0 | 0 | 4 | 3 | 0 | 0 |
+| [xzaviourr/peer\-to\-peer\-book\-lending](https://github.com/xzaviourr/peer-to-peer-book-lending) | 0 | 0 | 1 | 2 | 0 | 0 |
+| [xzaviourr/alice\-blue\-excel\-trading\-terminal](https://github.com/xzaviourr/alice-blue-excel-trading-terminal) | 0 | 0 | 1 | 0 | 1 | 0 |
+| [xzaviourr/cpp\-web\-server\-load\-generator](https://github.com/xzaviourr/cpp-web-server-load-generator) | 0 | 0 | 1 | 0 | 0 | 0 |
+| [xzaviourr/daily\-fitness\-slack\-bot](https://github.com/xzaviourr/daily-fitness-slack-bot) | 0 | 0 | 3 | 0 | 0 | 0 |
+| [xzaviourr/gpu\-resource\-device\-plugin](https://github.com/xzaviourr/gpu-resource-device-plugin) | 0 | 0 | 5 | 0 | 0 | 0 |
+| [xzaviourr/healthcare\-chatbot\-flutter](https://github.com/xzaviourr/healthcare-chatbot-flutter) | 0 | 0 | 1 | 0 | 0 | 0 |
+| [xzaviourr/movie\-recommendation\-algorithms](https://github.com/xzaviourr/movie-recommendation-algorithms) | 0 | 0 | 2 | 0 | 0 | 0 |
+| [xzaviourr/music\-year\-neural\-network](https://github.com/xzaviourr/music-year-neural-network) | 0 | 0 | 1 | 0 | 0 | 0 |
+| [xzaviourr/scheduler\-plugins](https://github.com/xzaviourr/scheduler-plugins) | 0 | 0 | 1 | 0 | 0 | 0 |
+| [xzaviourr/tandem\-queue\-simulator](https://github.com/xzaviourr/tandem-queue-simulator) | 0 | 0 | 1 | 0 | 0 | 0 |
 
 <details>
 <summary><strong>Top referrers and popular content</strong></summary>
@@ -48,7 +75,8 @@ Track views, visitors, clones, stars, forks, referrers, release downloads, and t
 
 | Source | Views | Unique visitors |
 |---|---:|---:|
-| github\.com | 5 | 3 |
+| Google | 14 | 2 |
+| github\.com | 10 | 5 |
 
 #### Popular content
 
@@ -56,14 +84,14 @@ Track views, visitors, clones, stars, forks, referrers, release downloads, and t
 |---|---|---:|
 | xzaviourr/xzaviourr | [/tree/agents/github\-profile\-improvement\-analysis](https://github.com/xzaviourr/xzaviourr/tree/agents/github-profile-improvement-analysis) | 5 |
 | xzaviourr/xzaviourr | [Overview](https://github.com/xzaviourr/xzaviourr) | 4 |
+| xzaviourr/stock\-price\-prediction\-ml | [/tree/master/results](https://github.com/xzaviourr/stock-price-prediction-ml) | 3 |
 | xzaviourr/multi\-agent\-trading\-platform | [Overview](https://github.com/xzaviourr/multi-agent-trading-platform) | 3 |
+| xzaviourr/stock\-price\-prediction\-ml | [/tree/master/results/Models](https://github.com/xzaviourr/stock-price-prediction-ml) | 2 |
 | xzaviourr/multi\-agent\-trading\-platform | [/pull/2](https://github.com/xzaviourr/multi-agent-trading-platform) | 2 |
 | xzaviourr/anshul\-sanghi\-portfolio | [Overview](https://github.com/xzaviourr/anshul-sanghi-portfolio) | 2 |
-| xzaviourr/xzaviourr | [/pulls](https://github.com/xzaviourr/xzaviourr/pulls) | 1 |
-| xzaviourr/xzaviourr | [/pull/1](https://github.com/xzaviourr/xzaviourr/pull/1) | 1 |
-| xzaviourr/multi\-agent\-trading\-platform | [/tree/master](https://github.com/xzaviourr/multi-agent-trading-platform) | 1 |
-| xzaviourr/multi\-agent\-trading\-platform | [/compare/main\.\.\.master](https://github.com/xzaviourr/multi-agent-trading-platform) | 1 |
-| xzaviourr/PacmanWars | [/projects](https://github.com/xzaviourr/PacmanWars/projects) | 1 |
+| xzaviourr/zerodha\-algorithmic\-trader | [/pulse](https://github.com/xzaviourr/zerodha-algorithmic-trader) | 1 |
+| xzaviourr/zerodha\-algorithmic\-trader | [/graphs/traffic](https://github.com/xzaviourr/zerodha-algorithmic-trader) | 1 |
+| xzaviourr/zerodha\-algorithmic\-trader | [/forks](https://github.com/xzaviourr/zerodha-algorithmic-trader) | 1 |
 
 </details>
 
@@ -76,6 +104,8 @@ GitHub shows repository traffic for only the last 14 days. Trafficfolio takes a 
 
 - **Lives entirely on GitHub** - GitHub Actions collects; Git stores; README presents.
 - **Account-wide** - one job tracks every public repository owned by the fork owner.
+- **Portfolio-aware** - active public and archived repositories get separate
+  summaries and rankings instead of being mixed together.
 - **Private by design** - your token stays in GitHub Actions secrets.
 - **Fork-native** - no username, deployment, database, or hosting configuration.
 - **Actually useful** - identify rising projects, acquisition sources, popular content, and clone activity.
@@ -136,6 +166,7 @@ The first run normally finishes in a few minutes. Refresh this README after the 
 | Category | Metrics |
 |---|---|
 | Traffic | Views, daily unique visitors, clones, daily unique cloners |
+| Portfolio | Separate public and archived repository summaries and tables |
 | Growth | Stars, forks, subscribers, open issues/pull requests, release downloads |
 | Discovery | Top referring sites and popular repository paths |
 | Ranking | Trending repositories based on recent growth and engagement |
