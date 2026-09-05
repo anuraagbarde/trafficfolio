@@ -396,35 +396,39 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
         (sum_traffic(repository, days)["views"] for _, repository in top_public),
         default=1,
     ) or 1
-    maximum_archived_views = max(
-        (sum_traffic(repository, days)["views"] for _, repository in top_archived),
-        default=1,
-    ) or 1
     public_rows = []
     for index, (name, repository) in enumerate(top_public):
         y = 574 + index * 55
-        view_count = sum_traffic(repository, days)["views"]
-        bar_width = int(185 * view_count / maximum_public_views)
+        repository_traffic = sum_traffic(repository, days)
+        view_count = repository_traffic["views"]
+        bar_width = int(100 * view_count / maximum_public_views)
         public_rows.append(
             f'<text x="62" y="{y + 17}" class="repo">'
-            f'{html.escape(ellipsize(name.split("/", 1)[-1], 34))}</text>'
-            f'<rect x="332" y="{y}" width="185" height="22" rx="6" fill="#21262d"/>'
-            f'<rect x="332" y="{y}" width="{bar_width}" height="22" rx="6" fill="url(#bar)"/>'
-            f'<text x="535" y="{y + 17}" class="value">{format_number(view_count)} views</text>'
-            f'<text x="663" y="{y + 17}" text-anchor="end" class="trend">{trend_score(repository, days):.1f}</text>'
+            f'{html.escape(ellipsize(name.split("/", 1)[-1], 27))}</text>'
+            f'<rect x="280" y="{y}" width="100" height="22" rx="6" fill="#21262d"/>'
+            f'<rect x="280" y="{y}" width="{bar_width}" height="22" rx="6" fill="url(#bar)"/>'
+            f'<text x="410" y="{y + 17}" text-anchor="end" class="value">'
+            f'{format_number(view_count)}</text>'
+            f'<text x="490" y="{y + 17}" text-anchor="end" class="clone">'
+            f'{format_number(repository_traffic["clones"])}</text>'
+            f'<text x="560" y="{y + 17}" text-anchor="end" class="fork">'
+            f'{format_number(repository["metadata"]["forks"])}</text>'
+            f'<text x="655" y="{y + 17}" text-anchor="end" class="trend">'
+            f'{trend_score(repository, days):.1f}</text>'
         )
     archived_rows = []
     for index, (name, repository) in enumerate(top_archived):
         y = 574 + index * 55
-        view_count = sum_traffic(repository, days)["views"]
-        bar_width = int(110 * view_count / maximum_archived_views)
+        repository_traffic = sum_traffic(repository, days)
         archived_rows.append(
             f'<text x="720" y="{y + 17}" class="repo">'
-            f'{html.escape(ellipsize(name.split("/", 1)[-1], 26))}</text>'
-            f'<rect x="920" y="{y}" width="110" height="22" rx="6" fill="#21262d"/>'
-            f'<rect x="920" y="{y}" width="{bar_width}" height="22" rx="6" fill="url(#archiveBar)"/>'
-            f'<text x="1104" y="{y + 17}" text-anchor="end" class="archive">'
-            f'{format_number(view_count)} views</text>'
+            f'{html.escape(ellipsize(name.split("/", 1)[-1], 24))}</text>'
+            f'<text x="950" y="{y + 17}" text-anchor="end" class="archive">'
+            f'{format_number(repository_traffic["views"])}</text>'
+            f'<text x="1025" y="{y + 17}" text-anchor="end" class="clone">'
+            f'{format_number(repository_traffic["clones"])}</text>'
+            f'<text x="1100" y="{y + 17}" text-anchor="end" class="fork">'
+            f'{format_number(repository["metadata"]["forks"])}</text>'
         )
 
     referrers: dict[str, int] = {}
@@ -462,7 +466,8 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
         )
     ) or '<text x="630" y="874" class="value">No popular content yet</text>'
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1020" viewBox="0 0 1200 1020" role="img" aria-label="Trafficfolio GitHub analytics dashboard">
+    owner = html.escape(str(data.get("owner") or "unknown"))
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1020" viewBox="0 0 1200 1020" role="img" aria-label="Trafficfolio GitHub analytics dashboard for {owner}">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080b13"/><stop offset=".55" stop-color="#10182b"/><stop offset="1" stop-color="#0b1020"/></linearGradient>
   <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#58a6ff"/><stop offset="1" stop-color="#a371f7"/></linearGradient>
@@ -477,8 +482,9 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
     .label{{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#8b949e;letter-spacing:1px}}
     .metric{{font:700 31px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f0f6fc}}
     .section{{font:600 17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#c9d1d9}}
-    .repo,.value,.trend,.archive{{font:13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#c9d1d9}}
+    .repo,.value,.trend,.archive,.clone,.fork{{font:13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#c9d1d9}}
     .value{{fill:#8b949e}} .trend{{fill:#3fb950;font-weight:600}} .archive{{fill:#d29922}}
+    .clone{{fill:#56d364;font-weight:600}} .fork{{fill:#f778ba;font-weight:600}}
     .pill{{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.7px}}
   </style>
 </defs>
@@ -487,7 +493,7 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
 <circle cx="1060" cy="20" r="280" fill="url(#ambient)"/>
 <rect x="1" y="1" width="1198" height="1018" rx="21" fill="none" stroke="#30363d"/>
 <circle cx="51" cy="52" r="14" fill="url(#bar)"/><path d="M45 52h12M51 46v12" stroke="#fff" stroke-width="2"/>
-<text x="78" y="60" class="title">Trafficfolio</text>
+<text x="78" y="60" class="title">Trafficfolio / @{owner}</text>
 <rect x="846" y="34" width="116" height="34" rx="17" fill="#238636" fill-opacity=".16" stroke="#3fb950" stroke-opacity=".45"/>
 <text x="904" y="56" text-anchor="middle" class="pill" fill="#56d364">{len(public)} PUBLIC</text>
 <rect x="976" y="34" width="150" height="34" rx="17" fill="#9e6a03" fill-opacity=".14" stroke="#d29922" stroke-opacity=".45"/>
@@ -507,11 +513,16 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
 <polyline points="{svg_polyline(clones, 52, 320, 1096, 90)}" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round"/>
 <rect x="38" y="478" width="642" height="310" rx="16" fill="#161b22" fill-opacity=".82" stroke="#30363d"/>
 <circle cx="62" cy="512" r="5" fill="#3fb950"/><text x="76" y="518" class="section">Trending public repositories</text>
-<text x="658" y="518" text-anchor="end" class="subtitle">views / momentum</text>
+<text x="410" y="548" text-anchor="end" class="label">VIEWS</text>
+<text x="490" y="548" text-anchor="end" class="label">CLONES</text>
+<text x="560" y="548" text-anchor="end" class="label">FORKS</text>
+<text x="655" y="548" text-anchor="end" class="label">MOMENTUM</text>
 {''.join(public_rows)}
 <rect x="700" y="478" width="428" height="310" rx="16" fill="#161b22" fill-opacity=".82" stroke="#30363d"/>
 <circle cx="724" cy="512" r="5" fill="#d29922"/><text x="738" y="518" class="section">Archived repository traffic</text>
-<text x="1104" y="518" text-anchor="end" class="subtitle">30-day views</text>
+<text x="950" y="548" text-anchor="end" class="label">VIEWS</text>
+<text x="1025" y="548" text-anchor="end" class="label">CLONES</text>
+<text x="1100" y="548" text-anchor="end" class="label">FORKS</text>
 {''.join(archived_rows)}
 <rect x="38" y="814" width="532" height="142" rx="14" fill="#161b22" fill-opacity=".82" stroke="#30363d"/>
 <text x="62" y="842" class="section">Top referrers</text>

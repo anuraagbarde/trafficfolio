@@ -171,6 +171,11 @@ class TrafficfolioTests(unittest.TestCase):
         self.assertIn("Top referrers", svg)
         self.assertIn("Popular content", svg)
         self.assertIn("hello-world", svg)
+        self.assertIn("Trafficfolio / @octocat", svg)
+        self.assertIn(">CLONES</text>", svg)
+        self.assertIn(">FORKS</text>", svg)
+        self.assertIn('class="clone">4</text>', svg)
+        self.assertIn('class="fork">3</text>', svg)
         ET.fromstring(svg)
 
     def test_public_and_archived_repositories_are_grouped_separately(self) -> None:
