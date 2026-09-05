@@ -1,7 +1,3355 @@
 {
-  "owner": "OWNER",
-  "repositories": {},
-  "updated_at": null,
+  "owner": "xzaviourr",
+  "repositories": {
+    "xzaviourr/PacmanWars": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 3,
+          "open_issues": 2,
+          "release_downloads": 0,
+          "stars": 7,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "A local Python arena where autonomous bots compete for food and survival using only a limited view of the map.",
+        "fork": false,
+        "forks": 3,
+        "full_name": "xzaviourr/PacmanWars",
+        "language": "Python",
+        "name": "PacmanWars",
+        "open_issues": 2,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 7,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/PacmanWars"
+      },
+      "path_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 1,
+            "path": "/xzaviourr/PacmanWars",
+            "title": "Overview",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/PacmanWars/actions",
+            "title": "/actions",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/PacmanWars/blob/master/main.py",
+            "title": "/blob/master/main.py",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/PacmanWars/blob/master/readme.md",
+            "title": "/blob/master/readme.md",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/PacmanWars/commit/4e25b55ec933aaf7f60b16e409d889b470cd26a0",
+            "title": "/commit/4e25b55ec933aaf7f60b16e409d889b470cd26a0",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/PacmanWars/commit/9bc91dff43c935cfc2d1d285e1fb3dee1163743b",
+            "title": "/commit/9bc91dff43c935cfc2d1d285e1fb3dee1163743b",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/PacmanWars/commits",
+            "title": "/commits",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/PacmanWars/commits/master",
+            "title": "/commits/master",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/PacmanWars/graphs/contributors",
+            "title": "/graphs/contributors",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/PacmanWars/projects",
+            "title": "/projects",
+            "uniques": 1
+          }
+        ]
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 11,
+          "views": 11
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 2,
+          "unique_clones": 1,
+          "unique_views": 1,
+          "views": 1
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 2,
+          "unique_clones": 2,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 1,
+          "views": 1
+        }
+      }
+    },
+    "xzaviourr/airbnb-profile-website-generator": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "Turn an authorized Airbnb host profile into structured portfolio data and a personalized static hospitality website.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/airbnb-profile-website-generator",
+        "language": "TypeScript",
+        "name": "airbnb-profile-website-generator",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 0,
+        "url": "https://github.com/xzaviourr/airbnb-profile-website-generator"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-05": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/alice-blue-excel-trading-terminal": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 1,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Archived Python and Excel trading-terminal experiment for the Alice Blue API.",
+        "fork": false,
+        "forks": 1,
+        "full_name": "xzaviourr/alice-blue-excel-trading-terminal",
+        "language": "Python",
+        "name": "alice-blue-excel-trading-terminal",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/alice-blue-excel-trading-terminal"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/anshul-sanghi-portfolio": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "Animated React and TypeScript portfolio for projects across AI, security, distributed systems, and research.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/anshul-sanghi-portfolio",
+        "language": "CSS",
+        "name": "anshul-sanghi-portfolio",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 0,
+        "url": "https://github.com/xzaviourr/anshul-sanghi-portfolio"
+      },
+      "path_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 2,
+            "path": "/xzaviourr/anshul-sanghi-portfolio",
+            "title": "Overview",
+            "uniques": 1
+          }
+        ]
+      },
+      "referrer_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 2,
+            "referrer": "github.com",
+            "uniques": 1
+          }
+        ]
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 27,
+          "unique_clones": 13,
+          "unique_views": 1,
+          "views": 2
+        },
+        "2026-09-02": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/azure-ai-desktop-agent": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 1,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "Experimental Azure AI desktop agent for tasks, SQLite queries, PC inspection, speech, and local troubleshooting.",
+        "fork": false,
+        "forks": 1,
+        "full_name": "xzaviourr/azure-ai-desktop-agent",
+        "language": "Python",
+        "name": "azure-ai-desktop-agent",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 1,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/azure-ai-desktop-agent"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/cpp-web-server-load-generator": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Educational C++ HTTP server and closed-loop load generator demonstrating POSIX sockets, worker pools, throughput, and response-time measurement.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/cpp-web-server-load-generator",
+        "language": "C++",
+        "name": "cpp-web-server-load-generator",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/cpp-web-server-load-generator"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-13": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-14": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-15": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-16": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-17": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-18": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-19": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-20": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-21": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/daily-fitness-slack-bot": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Archived Flask Slack app for daily fitness challenges, reminder nudges, and PostgreSQL-backed completion tracking.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/daily-fitness-slack-bot",
+        "language": "Python",
+        "name": "daily-fitness-slack-bot",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/daily-fitness-slack-bot"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/dependency-aware-learning-framework": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "Python and pytest framework for dependency-aware project learning, module locking, and visual progress tracking.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/dependency-aware-learning-framework",
+        "language": "Python",
+        "name": "dependency-aware-learning-framework",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 0,
+        "url": "https://github.com/xzaviourr/dependency-aware-learning-framework"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 2,
+          "unique_clones": 2,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/gpu-resource-device-plugin": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Archived fork of Nebuly NVIDIA Kubernetes device plugin with experimental MPS resource changes.",
+        "fork": true,
+        "forks": 0,
+        "full_name": "xzaviourr/gpu-resource-device-plugin",
+        "language": "Go",
+        "name": "gpu-resource-device-plugin",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 0,
+        "url": "https://github.com/xzaviourr/gpu-resource-device-plugin"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 2,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 2,
+          "unique_clones": 2,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/healthcare-chatbot-flutter": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Archived Flutter client prototype for the knowledge-graph healthcare chatbot, with chat UI, HTTP backend integration, and Firebase scaffolding.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/healthcare-chatbot-flutter",
+        "language": "Dart",
+        "name": "healthcare-chatbot-flutter",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/healthcare-chatbot-flutter"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/internship-opportunity-tracker": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 1,
+          "release_downloads": 0,
+          "stars": 3,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Historical Scrapy and Flask prototype that crawls internship listings, stores opportunities in PostgreSQL, and exposes search APIs.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/internship-opportunity-tracker",
+        "language": "Python",
+        "name": "internship-opportunity-tracker",
+        "open_issues": 1,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 3,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/internship-opportunity-tracker"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 2,
+          "unique_clones": 2,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/knowledge-graph-healthcare-chatbot": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 3,
+          "subscribers": 2
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Academic healthcare chatbot prototype combining a Neo4j medical knowledge graph with symptom search and text-similarity experiments; not for clinical use.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/knowledge-graph-healthcare-chatbot",
+        "language": "Jupyter Notebook",
+        "name": "knowledge-graph-healthcare-chatbot",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 3,
+        "subscribers": 2,
+        "url": "https://github.com/xzaviourr/knowledge-graph-healthcare-chatbot"
+      },
+      "path_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 1,
+            "path": "/xzaviourr/HealthcareChatbot",
+            "title": "Overview",
+            "uniques": 1
+          }
+        ]
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-12": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 1,
+          "views": 1
+        },
+        "2026-08-13": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-14": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-15": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-16": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-17": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-18": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-19": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-20": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-21": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/kubernetes-ml-function-scheduler": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "Experimental Kubernetes scheduler for placing ML function variants by accuracy, latency, throughput, and GPU resources.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/kubernetes-ml-function-scheduler",
+        "language": "Python",
+        "name": "kubernetes-ml-function-scheduler",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/kubernetes-ml-function-scheduler"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-21": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/langgraph-virtual-companion": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "Experimental local AI companion with dynamic agent orchestration, memory, generated functions, keyboard controls, and voice input.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/langgraph-virtual-companion",
+        "language": "Python",
+        "name": "langgraph-virtual-companion",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 0,
+        "url": "https://github.com/xzaviourr/langgraph-virtual-companion"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-17": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-18": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-19": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-20": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-21": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/movie-recommendation-algorithms": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Archived MovieLens collaborative-filtering notebook fork using cosine similarity and Surprise.",
+        "fork": true,
+        "forks": 0,
+        "full_name": "xzaviourr/movie-recommendation-algorithms",
+        "language": "Jupyter Notebook",
+        "name": "movie-recommendation-algorithms",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 0,
+        "url": "https://github.com/xzaviourr/movie-recommendation-algorithms"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/multi-agent-trading-platform": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "Multi-agent algorithmic trading prototype for Indian markets with strategy pods, paper trading, risk controls, and feedback.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/multi-agent-trading-platform",
+        "language": "Python",
+        "name": "multi-agent-trading-platform",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 0,
+        "url": "https://github.com/xzaviourr/multi-agent-trading-platform"
+      },
+      "path_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 3,
+            "path": "/xzaviourr/MoneyMaker",
+            "title": "Overview",
+            "uniques": 1
+          },
+          {
+            "count": 2,
+            "path": "/xzaviourr/MoneyMaker/pull/2",
+            "title": "/pull/2",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/MoneyMaker/compare/main...master",
+            "title": "/compare/main...master",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/MoneyMaker/tree/master",
+            "title": "/tree/master",
+            "uniques": 1
+          }
+        ]
+      },
+      "referrer_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 1,
+            "referrer": "github.com",
+            "uniques": 1
+          }
+        ]
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 10,
+          "unique_clones": 6,
+          "unique_views": 1,
+          "views": 11
+        },
+        "2026-09-02": {
+          "clones": 3,
+          "unique_clones": 3,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/music-year-neural-network": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "From-scratch NumPy feed-forward neural network for predicting song release years from timbre features, built for an IIT Bombay ML assignment.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/music-year-neural-network",
+        "language": "Jupyter Notebook",
+        "name": "music-year-neural-network",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/music-year-neural-network"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/peer-to-peer-book-lending": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 2,
+          "subscribers": 0
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Archived PHP/MySQL peer-to-peer book lending website for college students.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/peer-to-peer-book-lending",
+        "language": "PHP",
+        "name": "peer-to-peer-book-lending",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 2,
+        "subscribers": 0,
+        "url": "https://github.com/xzaviourr/peer-to-peer-book-lending"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-18": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-19": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-20": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-21": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/pyqt-portfolio-dashboard": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 1,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "PyQt desktop portfolio dashboard for exploring holdings, trade history, allocation, dividends, splits, and market data.",
+        "fork": false,
+        "forks": 1,
+        "full_name": "xzaviourr/pyqt-portfolio-dashboard",
+        "language": "Python",
+        "name": "pyqt-portfolio-dashboard",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/pyqt-portfolio-dashboard"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/scheduler-plugins": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Archived unmodified fork of Kubernetes SIG Scheduling scheduler plugins.",
+        "fork": true,
+        "forks": 0,
+        "full_name": "xzaviourr/scheduler-plugins",
+        "language": null,
+        "name": "scheduler-plugins",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 0,
+        "url": "https://github.com/xzaviourr/scheduler-plugins"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-14": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-15": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-16": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-17": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-18": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-19": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-20": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-21": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/stock-price-prediction-ml": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 1,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Academic LSTM experiment for SBI price prediction using engineered time-series features and correlations across 12 NIFTY 50 equities.",
+        "fork": false,
+        "forks": 1,
+        "full_name": "xzaviourr/stock-price-prediction-ml",
+        "language": "Jupyter Notebook",
+        "name": "stock-price-prediction-ml",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/stock-price-prediction-ml"
+      },
+      "path_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 3,
+            "path": "/xzaviourr/StockPricePredictor/tree/master/results",
+            "title": "/tree/master/results",
+            "uniques": 1
+          },
+          {
+            "count": 2,
+            "path": "/xzaviourr/StockPricePredictor/tree/master/results/Models",
+            "title": "/tree/master/results/Models",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/StockPricePredictor",
+            "title": "Overview",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/StockPricePredictor/blame/master/results/Models/1_1_Epoch150_BatchSize256.txt",
+            "title": "/blame/master/results/Models/1_1_Epoch150_BatchSize256.txt",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/StockPricePredictor/blob/master/results/Correlations.json",
+            "title": "/blob/master/results/Correlations.json",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/StockPricePredictor/blob/master/results/CustomFeatures/HDFCBANK.csv",
+            "title": "/blob/master/results/CustomFeatures/HDFCBANK.csv",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/StockPricePredictor/blob/master/results/Models/1_1_Epoch150_BatchSize256.txt",
+            "title": "/blob/master/results/Models/1_1_Epoch150_BatchSize256.txt",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/StockPricePredictor/blob/master/results/generalized_test_predictions_bs256_e150.png",
+            "title": "/blob/master/results/generalized_test_predictions_bs256_e150.png",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/StockPricePredictor/blob/master/results/generalized_test_predictions_bs256_e50_1_3.png",
+            "title": "/blob/master/results/generalized_test_predictions_bs256_e50_1_3.png",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/StockPricePredictor/blob/master/results/train_loss.png",
+            "title": "/blob/master/results/train_loss.png",
+            "uniques": 1
+          }
+        ]
+      },
+      "referrer_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 14,
+            "referrer": "Google",
+            "uniques": 2
+          }
+        ]
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 1,
+          "views": 1
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 1,
+          "views": 13
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/tandem-queue-simulator": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Discrete-event simulator for priority tandem queues, comparing synchronous and asynchronous database calls in a closed-loop web-service model.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/tandem-queue-simulator",
+        "language": "Jupyter Notebook",
+        "name": "tandem-queue-simulator",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/tandem-queue-simulator"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-19": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-20": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-21": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/telnet-honeypot": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 2,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 5,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Educational Telnet honeypot with a simulated Linux filesystem and interaction logging. Archived prototype; use only in an authorized isolated lab.",
+        "fork": false,
+        "forks": 2,
+        "full_name": "xzaviourr/telnet-honeypot",
+        "language": "Python",
+        "name": "telnet-honeypot",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 5,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/telnet-honeypot"
+      },
+      "path_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 1,
+            "path": "/xzaviourr/Honeypot",
+            "title": "Overview",
+            "uniques": 1
+          }
+        ]
+      },
+      "referrer_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 1,
+            "referrer": "github.com",
+            "uniques": 1
+          }
+        ]
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 1,
+          "views": 1
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/trafficfolio": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "A fork-to-own GitHub traffic analytics dashboard that lives in your README. Track views, clones, stars, forks, referrers, and trending repos with GitHub Actions.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/trafficfolio",
+        "language": "Python",
+        "name": "trafficfolio",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 0,
+        "url": "https://github.com/xzaviourr/trafficfolio"
+      },
+      "path_snapshots": {
+        "2026-09-05": []
+      },
+      "referrer_snapshots": {
+        "2026-09-05": []
+      },
+      "traffic": {
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-05": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/xzaviourr": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": false,
+        "description": "My GitHub profile and a gateway to the engineering work I care about most. Explore projects spanning artificial intelligence, algorithmic trading, distributed systems, security, research, and developer tooling.",
+        "fork": false,
+        "forks": 0,
+        "full_name": "xzaviourr/xzaviourr",
+        "language": null,
+        "name": "xzaviourr",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 0,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/xzaviourr"
+      },
+      "path_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 5,
+            "path": "/xzaviourr/xzaviourr/tree/agents/github-profile-improvement-analysis",
+            "title": "/tree/agents/github-profile-improvement-analysis",
+            "uniques": 1
+          },
+          {
+            "count": 4,
+            "path": "/xzaviourr/xzaviourr",
+            "title": "Overview",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/xzaviourr/pull/1",
+            "title": "/pull/1",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/xzaviourr/pulls",
+            "title": "/pulls",
+            "uniques": 1
+          }
+        ]
+      },
+      "referrer_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 2,
+            "referrer": "github.com",
+            "uniques": 1
+          }
+        ]
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 14,
+          "unique_clones": 6,
+          "unique_views": 1,
+          "views": 11
+        },
+        "2026-09-02": {
+          "clones": 1,
+          "unique_clones": 1,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    },
+    "xzaviourr/zerodha-algorithmic-trader": {
+      "active": true,
+      "counters": {
+        "2026-09-05": {
+          "forks": 4,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 8,
+          "subscribers": 1
+        }
+      },
+      "metadata": {
+        "archived": true,
+        "description": "Archived Flask trading-server prototype integrating Zerodha Kite Connect with five-EMA and Bank NIFTY short-straddle strategies; not investment advice.",
+        "fork": false,
+        "forks": 4,
+        "full_name": "xzaviourr/zerodha-algorithmic-trader",
+        "language": "Python",
+        "name": "zerodha-algorithmic-trader",
+        "open_issues": 0,
+        "private": false,
+        "release_downloads": 0,
+        "stars": 8,
+        "subscribers": 1,
+        "url": "https://github.com/xzaviourr/zerodha-algorithmic-trader"
+      },
+      "path_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 1,
+            "path": "/xzaviourr/AlgoTrader_with_Zerodha",
+            "title": "Overview",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/AlgoTrader_with_Zerodha/forks",
+            "title": "/forks",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/AlgoTrader_with_Zerodha/graphs/traffic",
+            "title": "/graphs/traffic",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "path": "/xzaviourr/AlgoTrader_with_Zerodha/pulse",
+            "title": "/pulse",
+            "uniques": 1
+          }
+        ]
+      },
+      "referrer_snapshots": {
+        "2026-09-05": [
+          {
+            "count": 4,
+            "referrer": "github.com",
+            "uniques": 1
+          }
+        ]
+      },
+      "traffic": {
+        "2026-08-22": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-23": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-24": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-25": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-26": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-27": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-28": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-29": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-30": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-08-31": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-01": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 1,
+          "views": 4
+        },
+        "2026-09-02": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-03": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        },
+        "2026-09-04": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
+        }
+      }
+    }
+  },
+  "updated_at": "2026-09-05T12:32:17Z",
   "version": 1
 }
-
