@@ -1,0 +1,55 @@
+name: Update Trafficfolio
+
+on:
+  schedule:
+    - cron: "17 23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trafficfolio-dashboard
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Collect and render
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the dashboard repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify setup
+        env:
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: |
+          if [ -z "$TRAFFIC_TOKEN" ]; then
+            echo "::error::TRAFFIC_TOKEN is missing. Follow the README setup instructions."
+            exit 1
+          fi
+
+      - name: Update dashboard
+        env:
+          DASHBOARD_OWNER: ${{ github.repository_owner }}
+          INCLUDE_PRIVATE: ${{ vars.INCLUDE_PRIVATE }}
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: python scripts/trafficfolio.py update
+
+      - name: Commit dashboard changes
+        run: |
+          git config user.name "trafficfolio[bot]"
+          git config user.email "trafficfolio[bot]@users.noreply.github.com"
+          git add README.md assets/dashboard.svg data/dashboard.json
+          if git diff --cached --quiet; then
+            echo "Dashboard is already current."
+            exit 0
+          fi
+          git commit -m "chore: update traffic dashboard"
+          git push

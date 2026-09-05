@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest a metric, visualization, or workflow improvement
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What would become easier or more useful?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Data collection
+        - README dashboard
+        - SVG visualization
+        - Fork onboarding
+        - Documentation
+    validations:
+      required: true
+
