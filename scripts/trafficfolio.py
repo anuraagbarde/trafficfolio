@@ -81,7 +81,9 @@ def empty_data(owner: str) -> dict[str, Any]:
     }
 
 
-def load_data(path: Path, owner: str) -> dict[str, Any]:
+def load_data(
+    path: Path, owner: str, allow_owner_reset: bool = False
+) -> dict[str, Any]:
     if not path.exists():
         return empty_data(owner)
     try:
@@ -95,6 +97,12 @@ def load_data(path: Path, owner: str) -> dict[str, Any]:
     if data.get("owner") == "OWNER" and not data.get("repositories"):
         return empty_data(owner)
     if data.get("owner", "").casefold() != owner.casefold():
+        if allow_owner_reset:
+            print(
+                f"Initializing fork for {owner}; upstream dashboard data belongs to "
+                f"{data.get('owner')}."
+            )
+            return empty_data(owner)
         raise RuntimeError(
             f"Data belongs to {data.get('owner')!r}, not {owner!r}. "
             "Delete the data file after forking to initialize a new owner."
@@ -419,7 +427,42 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
             f'{format_number(view_count)} views</text>'
         )
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-label="Trafficfolio GitHub analytics dashboard">
+    referrers: dict[str, int] = {}
+    popular_paths: list[tuple[int, str, str]] = []
+    for name, repository in [*public, *archived]:
+        for item in latest_snapshot(repository, "referrer_snapshots"):
+            source = str(item.get("referrer", "unknown"))
+            referrers[source] = referrers.get(source, 0) + int(item.get("count", 0))
+        for item in latest_snapshot(repository, "path_snapshots"):
+            popular_paths.append(
+                (
+                    int(item.get("count", 0)),
+                    name.split("/", 1)[-1],
+                    str(item.get("title") or item.get("path") or "Overview"),
+                )
+            )
+    referrer_rows = "".join(
+        f'<text x="64" y="{874 + index * 36}" class="repo">'
+        f'{html.escape(ellipsize(source, 35))}</text>'
+        f'<text x="535" y="{874 + index * 36}" text-anchor="end" class="value">'
+        f'{format_number(count)} views</text>'
+        for index, (source, count) in enumerate(
+            sorted(referrers.items(), key=lambda item: item[1], reverse=True)[:3]
+        )
+    ) or '<text x="64" y="874" class="value">No referrer data yet</text>'
+    content_rows = "".join(
+        f'<text x="630" y="{874 + index * 36}" class="repo">'
+        f'{html.escape(ellipsize(name, 19))}</text>'
+        f'<text x="810" y="{874 + index * 36}" class="value">'
+        f'{html.escape(ellipsize(title, 27))}</text>'
+        f'<text x="1100" y="{874 + index * 36}" text-anchor="end" class="value">'
+        f'{format_number(count)} views</text>'
+        for index, (count, name, title) in enumerate(
+            sorted(popular_paths, reverse=True)[:3]
+        )
+    ) or '<text x="630" y="874" class="value">No popular content yet</text>'
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1020" viewBox="0 0 1200 1020" role="img" aria-label="Trafficfolio GitHub analytics dashboard">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080b13"/><stop offset=".55" stop-color="#10182b"/><stop offset="1" stop-color="#0b1020"/></linearGradient>
   <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#58a6ff"/><stop offset="1" stop-color="#a371f7"/></linearGradient>
@@ -439,10 +482,10 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
     .pill{{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.7px}}
   </style>
 </defs>
-<rect width="1200" height="860" rx="22" fill="url(#bg)"/>
-<rect width="1200" height="860" rx="22" fill="url(#grid)"/>
+<rect width="1200" height="1020" rx="22" fill="url(#bg)"/>
+<rect width="1200" height="1020" rx="22" fill="url(#grid)"/>
 <circle cx="1060" cy="20" r="280" fill="url(#ambient)"/>
-<rect x="1" y="1" width="1198" height="858" rx="21" fill="none" stroke="#30363d"/>
+<rect x="1" y="1" width="1198" height="1018" rx="21" fill="none" stroke="#30363d"/>
 <circle cx="51" cy="52" r="14" fill="url(#bar)"/><path d="M45 52h12M51 46v12" stroke="#fff" stroke-width="2"/>
 <text x="78" y="60" class="title">Trafficfolio</text>
 <rect x="846" y="34" width="116" height="34" rx="17" fill="#238636" fill-opacity=".16" stroke="#3fb950" stroke-opacity=".45"/>
@@ -450,6 +493,10 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
 <rect x="976" y="34" width="150" height="34" rx="17" fill="#9e6a03" fill-opacity=".14" stroke="#d29922" stroke-opacity=".45"/>
 <text x="1051" y="56" text-anchor="middle" class="pill" fill="#f2cc60">{len(archived)} ARCHIVED</text>
 {''.join(card_markup)}
+<text x="40" y="232" class="subtitle">Daily cloners {format_number(totals["unique_clones"])}</text>
+<text x="285" y="232" class="subtitle">Subscribers {format_number(totals["subscribers"])}</text>
+<text x="535" y="232" class="subtitle">Open issues / PRs {format_number(totals["open_issues"])}</text>
+<text x="835" y="232" class="subtitle">Release downloads {format_number(totals["release_downloads"])}</text>
 <text x="40" y="256" class="section">Repository traffic</text>
 <text x="1138" y="256" text-anchor="end" class="subtitle">public portfolio / {len(days)} days / views blue / clones green</text>
 <rect x="38" y="274" width="1090" height="168" rx="14" fill="#0d1117" fill-opacity=".62" stroke="#30363d"/>
@@ -466,7 +513,13 @@ def render_svg(data: dict[str, Any], days: list[str]) -> str:
 <circle cx="724" cy="512" r="5" fill="#d29922"/><text x="738" y="518" class="section">Archived repository traffic</text>
 <text x="1104" y="518" text-anchor="end" class="subtitle">30-day views</text>
 {''.join(archived_rows)}
-<text x="40" y="826" class="subtitle">Updated {html.escape(str(data.get("updated_at") or "not yet"))} / durable data from the GitHub API</text>
+<rect x="38" y="814" width="532" height="142" rx="14" fill="#161b22" fill-opacity=".82" stroke="#30363d"/>
+<text x="62" y="842" class="section">Top referrers</text>
+{referrer_rows}
+<rect x="590" y="814" width="538" height="142" rx="14" fill="#161b22" fill-opacity=".82" stroke="#30363d"/>
+<text x="614" y="842" class="section">Popular content</text>
+{content_rows}
+<text x="40" y="989" class="subtitle">Updated {html.escape(str(data.get("updated_at") or "not yet"))} / durable data from the GitHub API / daily unique counts are not lifetime unique people</text>
 </svg>
 """
 
@@ -491,7 +544,7 @@ def latest_snapshot(repository: dict[str, Any], key: str) -> list[dict[str, Any]
     return snapshots[max(snapshots)]
 
 
-def render_markdown(data: dict[str, Any], days: list[str]) -> str:
+def render_detailed_markdown(data: dict[str, Any], days: list[str]) -> str:
     public = public_repositories(data)
     archived = archived_repositories(data)
     private = private_repositories(data)
@@ -680,6 +733,15 @@ def render_markdown(data: dict[str, Any], days: list[str]) -> str:
     return "\n".join(lines)
 
 
+def render_markdown(data: dict[str, Any], days: list[str]) -> str:
+    del days
+    version = urllib.parse.quote(str(data.get("updated_at") or "pending"), safe="")
+    return (
+        f'<p align="center"><img src="./assets/dashboard.svg?v={version}" '
+        f'alt="Trafficfolio dashboard" width="100%"></p>'
+    )
+
+
 def replace_dashboard(readme: str, dashboard: str) -> str:
     if readme.count(START_MARKER) != 1 or readme.count(END_MARKER) != 1:
         raise RuntimeError(
@@ -726,7 +788,13 @@ def main() -> int:
         return 2
 
     try:
-        data = load_data(args.data, owner)
+        data = load_data(
+            args.data,
+            owner,
+            allow_owner_reset=(
+                args.command == "update" and enabled(os.getenv("GITHUB_ACTIONS"))
+            ),
+        )
         if args.command == "update":
             token = os.getenv("TRAFFIC_TOKEN")
             if not token:

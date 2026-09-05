@@ -162,14 +162,15 @@ class TrafficfolioTests(unittest.TestCase):
             output = readme.read_text(encoding="utf-8")
             svg = (root / "assets" / "dashboard.svg").read_text(encoding="utf-8")
 
-        self.assertIn("octocat/hello-world", output)
-        self.assertIn("Public repositories", output)
-        self.assertIn("Archived repositories", output)
         self.assertIn("dashboard.svg?v=2026-09-05T12%3A00%3A00Z", output)
+        self.assertNotIn("Public repositories", output)
         self.assertTrue(svg.startswith("<svg "))
         self.assertIn("Trafficfolio", svg)
         self.assertIn("Trending public repositories", svg)
         self.assertIn("Archived repository traffic", svg)
+        self.assertIn("Top referrers", svg)
+        self.assertIn("Popular content", svg)
+        self.assertIn("hello-world", svg)
         ET.fromstring(svg)
 
     def test_public_and_archived_repositories_are_grouped_separately(self) -> None:
@@ -205,7 +206,7 @@ class TrafficfolioTests(unittest.TestCase):
             ["octocat/archive"],
         )
         days = trafficfolio.date_window(30, now.date())
-        output = trafficfolio.render_markdown(data, days)
+        output = trafficfolio.render_detailed_markdown(data, days)
         public_section, archived_section = output.split("### Archived portfolio")
         self.assertIn("octocat/public", public_section)
         self.assertNotIn("octocat/archive", public_section)
@@ -237,7 +238,7 @@ class TrafficfolioTests(unittest.TestCase):
             [name for name, _ in trafficfolio.private_repositories(data)],
             ["octocat/private"],
         )
-        output = trafficfolio.render_markdown(
+        output = trafficfolio.render_detailed_markdown(
             data, trafficfolio.date_window(30, now.date())
         )
         self.assertIn("Private repositories (1)", output)
@@ -251,6 +252,18 @@ class TrafficfolioTests(unittest.TestCase):
             )
             with self.assertRaisesRegex(RuntimeError, "not 'octocat'"):
                 trafficfolio.load_data(path, "octocat")
+
+    def test_actions_can_reset_inherited_fork_data(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "dashboard.json"
+            path.write_text(
+                '{"version": 1, "owner": "upstream", "repositories": {"upstream/repo": {}}}',
+                encoding="utf-8",
+            )
+            data = trafficfolio.load_data(
+                path, "fork-owner", allow_owner_reset=True
+            )
+        self.assertEqual(data, trafficfolio.empty_data("fork-owner"))
 
     def test_seed_data_adopts_fork_owner(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
