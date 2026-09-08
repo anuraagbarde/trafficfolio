@@ -10,6 +10,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -28,10 +35,12 @@
         "url": "https://github.com/anuraagbarde/90DaysOfDevOps"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -129,6 +138,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -147,10 +163,12 @@
         "url": "https://github.com/anuraagbarde/AWS_SVOD_Django"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -248,6 +266,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -266,10 +291,12 @@
         "url": "https://github.com/anuraagbarde/Data-Structure-Algorithms-LLD-HLD"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -367,6 +394,13 @@
           "release_downloads": 0,
           "stars": 2,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 2,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -385,10 +419,12 @@
         "url": "https://github.com/anuraagbarde/Go-Socket-Concurrency"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -486,6 +522,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -504,10 +547,12 @@
         "url": "https://github.com/anuraagbarde/HRS_Datasets"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-25": {
@@ -593,6 +638,12 @@
           "unique_clones": 0,
           "unique_views": 0,
           "views": 0
+        },
+        "2026-09-08": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
         }
       }
     },
@@ -600,6 +651,13 @@
       "active": true,
       "counters": {
         "2026-09-07": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        },
+        "2026-09-08": {
           "forks": 0,
           "open_issues": 0,
           "release_downloads": 0,
@@ -623,10 +681,12 @@
         "url": "https://github.com/anuraagbarde/Honeypot"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-19": {
@@ -724,6 +784,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 1,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -755,10 +822,31 @@
             "title": "/tree/master/src",
             "uniques": 1
           }
+        ],
+        "2026-09-08": [
+          {
+            "count": 4,
+            "path": "/anuraagbarde/LLD-Template-Typescript",
+            "title": "Overview",
+            "uniques": 4
+          },
+          {
+            "count": 1,
+            "path": "/anuraagbarde/LLD-Template-Typescript/tree/master/src",
+            "title": "/tree/master/src",
+            "uniques": 1
+          }
         ]
       },
       "referrer_snapshots": {
         "2026-09-07": [
+          {
+            "count": 5,
+            "referrer": "Google",
+            "uniques": 4
+          }
+        ],
+        "2026-09-08": [
           {
             "count": 5,
             "referrer": "Google",
@@ -862,6 +950,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -880,10 +975,12 @@
         "url": "https://github.com/anuraagbarde/MachineLearning"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -981,6 +1078,13 @@
           "release_downloads": 0,
           "stars": 2,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 5,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 2,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -999,10 +1103,12 @@
         "url": "https://github.com/anuraagbarde/OTP"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -1100,6 +1206,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -1125,10 +1238,19 @@
             "title": "Overview",
             "uniques": 1
           }
+        ],
+        "2026-09-08": [
+          {
+            "count": 1,
+            "path": "/anuraagbarde/OpenGL_basic_animation",
+            "title": "Overview",
+            "uniques": 1
+          }
         ]
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-19": {
@@ -1226,6 +1348,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -1244,10 +1373,12 @@
         "url": "https://github.com/anuraagbarde/SDE-Interview-Questions"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -1345,6 +1476,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -1363,10 +1501,12 @@
         "url": "https://github.com/anuraagbarde/Stock_charges_equity"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -1464,6 +1604,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -1482,10 +1629,12 @@
         "url": "https://github.com/anuraagbarde/The-Accidental-CTO"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-14": {
@@ -1583,6 +1732,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -1601,10 +1757,12 @@
         "url": "https://github.com/anuraagbarde/TimeComplexityAnalyzer"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -1702,6 +1860,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 1,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -1720,10 +1885,12 @@
         "url": "https://github.com/anuraagbarde/VideoCall_React_PeerJS_webRTC"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -1821,6 +1988,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -1839,10 +2013,12 @@
         "url": "https://github.com/anuraagbarde/You-Dont-Know-JS"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-25": {
@@ -1928,6 +2104,12 @@
           "unique_clones": 0,
           "unique_views": 0,
           "views": 0
+        },
+        "2026-09-08": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
         }
       }
     },
@@ -1935,6 +2117,13 @@
       "active": true,
       "counters": {
         "2026-09-07": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
+        },
+        "2026-09-08": {
           "forks": 0,
           "open_issues": 0,
           "release_downloads": 0,
@@ -1958,10 +2147,12 @@
         "url": "https://github.com/anuraagbarde/algorithmsRecollection"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -2059,6 +2250,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -2077,10 +2275,12 @@
         "url": "https://github.com/anuraagbarde/anuraagbarde"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -2178,6 +2378,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -2196,10 +2403,12 @@
         "url": "https://github.com/anuraagbarde/checkoutTypescript"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -2297,6 +2506,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -2315,10 +2531,12 @@
         "url": "https://github.com/anuraagbarde/collegeDemoNodeBackend"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -2416,6 +2634,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -2434,10 +2659,12 @@
         "url": "https://github.com/anuraagbarde/collegeDemoReactFrontend"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -2535,6 +2762,13 @@
           "release_downloads": 0,
           "stars": 2,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 2,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -2560,10 +2794,25 @@
             "title": "Overview",
             "uniques": 1
           }
+        ],
+        "2026-09-08": [
+          {
+            "count": 1,
+            "path": "/anuraagbarde/db-deadlock",
+            "title": "Overview",
+            "uniques": 1
+          }
         ]
       },
       "referrer_snapshots": {
         "2026-09-07": [
+          {
+            "count": 1,
+            "referrer": "Google",
+            "uniques": 1
+          }
+        ],
+        "2026-09-08": [
           {
             "count": 1,
             "referrer": "Google",
@@ -2667,6 +2916,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -2685,10 +2941,12 @@
         "url": "https://github.com/anuraagbarde/deep_cache_replacement"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-16": {
@@ -2786,6 +3044,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -2804,10 +3069,12 @@
         "url": "https://github.com/anuraagbarde/design-patterns-for-humans"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -2905,6 +3172,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -2930,10 +3204,25 @@
             "title": "Overview",
             "uniques": 1
           }
+        ],
+        "2026-09-08": [
+          {
+            "count": 1,
+            "path": "/anuraagbarde/dev-setup-flow-commands",
+            "title": "Overview",
+            "uniques": 1
+          }
         ]
       },
       "referrer_snapshots": {
         "2026-09-07": [
+          {
+            "count": 1,
+            "referrer": "Google",
+            "uniques": 1
+          }
+        ],
+        "2026-09-08": [
           {
             "count": 1,
             "referrer": "Google",
@@ -3037,6 +3326,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -3055,10 +3351,12 @@
         "url": "https://github.com/anuraagbarde/engineering-blogs"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-25": {
@@ -3144,6 +3442,12 @@
           "unique_clones": 0,
           "unique_views": 0,
           "views": 0
+        },
+        "2026-09-08": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
         }
       }
     },
@@ -3151,6 +3455,13 @@
       "active": true,
       "counters": {
         "2026-09-07": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
+        },
+        "2026-09-08": {
           "forks": 0,
           "open_issues": 0,
           "release_downloads": 0,
@@ -3174,10 +3485,12 @@
         "url": "https://github.com/anuraagbarde/free-cluely"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-13": {
@@ -3275,6 +3588,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -3293,10 +3613,12 @@
         "url": "https://github.com/anuraagbarde/generator-express-no-stress-typescript"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -3394,6 +3716,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -3412,10 +3741,12 @@
         "url": "https://github.com/anuraagbarde/getting-started-with-serverless"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -3513,6 +3844,13 @@
           "release_downloads": 0,
           "stars": 2,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 2,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -3531,10 +3869,12 @@
         "url": "https://github.com/anuraagbarde/go-gRPC-tutorial"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -3632,6 +3972,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -3650,10 +3997,12 @@
         "url": "https://github.com/anuraagbarde/goConcurrencyTutorial"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -3751,6 +4100,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -3776,10 +4132,25 @@
             "title": "Overview",
             "uniques": 1
           }
+        ],
+        "2026-09-08": [
+          {
+            "count": 1,
+            "path": "/anuraagbarde/go_tutorial",
+            "title": "Overview",
+            "uniques": 1
+          }
         ]
       },
       "referrer_snapshots": {
         "2026-09-07": [
+          {
+            "count": 1,
+            "referrer": "Google",
+            "uniques": 1
+          }
+        ],
+        "2026-09-08": [
           {
             "count": 1,
             "referrer": "Google",
@@ -3883,6 +4254,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -3901,10 +4279,12 @@
         "url": "https://github.com/anuraagbarde/gobench"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-25": {
@@ -3990,6 +4370,12 @@
           "unique_clones": 0,
           "unique_views": 0,
           "views": 0
+        },
+        "2026-09-08": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
         }
       }
     },
@@ -3997,6 +4383,13 @@
       "active": true,
       "counters": {
         "2026-09-07": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        },
+        "2026-09-08": {
           "forks": 0,
           "open_issues": 0,
           "release_downloads": 0,
@@ -4027,10 +4420,25 @@
             "title": "Overview",
             "uniques": 1
           }
+        ],
+        "2026-09-08": [
+          {
+            "count": 1,
+            "path": "/anuraagbarde/inheritanceVScomposition",
+            "title": "Overview",
+            "uniques": 1
+          }
         ]
       },
       "referrer_snapshots": {
         "2026-09-07": [
+          {
+            "count": 1,
+            "referrer": "Google",
+            "uniques": 1
+          }
+        ],
+        "2026-09-08": [
           {
             "count": 1,
             "referrer": "Google",
@@ -4134,6 +4542,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -4152,10 +4567,12 @@
         "url": "https://github.com/anuraagbarde/interview-tw"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -4253,6 +4670,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -4271,10 +4695,12 @@
         "url": "https://github.com/anuraagbarde/layer5"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -4372,6 +4798,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -4397,10 +4830,25 @@
             "title": "Overview",
             "uniques": 1
           }
+        ],
+        "2026-09-08": [
+          {
+            "count": 1,
+            "path": "/anuraagbarde/lld-typescript-template",
+            "title": "Overview",
+            "uniques": 1
+          }
         ]
       },
       "referrer_snapshots": {
         "2026-09-07": [
+          {
+            "count": 1,
+            "referrer": "Google",
+            "uniques": 1
+          }
+        ],
+        "2026-09-08": [
           {
             "count": 1,
             "referrer": "Google",
@@ -4504,6 +4952,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -4522,10 +4977,12 @@
         "url": "https://github.com/anuraagbarde/macOS-stdc.h"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -4623,6 +5080,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -4641,10 +5105,12 @@
         "url": "https://github.com/anuraagbarde/market-strategies"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -4742,6 +5208,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -4760,10 +5233,12 @@
         "url": "https://github.com/anuraagbarde/mentoring"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -4861,6 +5336,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -4879,10 +5361,12 @@
         "url": "https://github.com/anuraagbarde/mmc_qtdn"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-14": {
@@ -4980,6 +5464,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -4998,10 +5489,12 @@
         "url": "https://github.com/anuraagbarde/multi_thread_process_python_guide"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -5099,6 +5592,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -5117,10 +5617,12 @@
         "url": "https://github.com/anuraagbarde/obsidian-sanctum"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -5218,6 +5720,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -5236,10 +5745,12 @@
         "url": "https://github.com/anuraagbarde/oneshotext"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -5337,6 +5848,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -5355,10 +5873,12 @@
         "url": "https://github.com/anuraagbarde/optimus"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -5456,6 +5976,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -5474,10 +6001,12 @@
         "url": "https://github.com/anuraagbarde/papers-we-love"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-25": {
@@ -5563,6 +6092,12 @@
           "unique_clones": 0,
           "unique_views": 0,
           "views": 0
+        },
+        "2026-09-08": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
         }
       }
     },
@@ -5570,6 +6105,13 @@
       "active": true,
       "counters": {
         "2026-09-07": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
+        },
+        "2026-09-08": {
           "forks": 0,
           "open_issues": 0,
           "release_downloads": 0,
@@ -5600,10 +6142,25 @@
             "title": "Overview",
             "uniques": 1
           }
+        ],
+        "2026-09-08": [
+          {
+            "count": 1,
+            "path": "/anuraagbarde/partygames",
+            "title": "Overview",
+            "uniques": 1
+          }
         ]
       },
       "referrer_snapshots": {
         "2026-09-07": [
+          {
+            "count": 1,
+            "referrer": "Google",
+            "uniques": 1
+          }
+        ],
+        "2026-09-08": [
           {
             "count": 1,
             "referrer": "Google",
@@ -5707,6 +6264,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -5732,10 +6296,25 @@
             "title": "Overview",
             "uniques": 1
           }
+        ],
+        "2026-09-08": [
+          {
+            "count": 1,
+            "path": "/anuraagbarde/postgres-sync",
+            "title": "Overview",
+            "uniques": 1
+          }
         ]
       },
       "referrer_snapshots": {
         "2026-09-07": [
+          {
+            "count": 1,
+            "referrer": "Google",
+            "uniques": 1
+          }
+        ],
+        "2026-09-08": [
           {
             "count": 1,
             "referrer": "Google",
@@ -5839,6 +6418,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -5857,10 +6443,12 @@
         "url": "https://github.com/anuraagbarde/pycon-concurrency-tutorial-2020"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-25": {
@@ -5946,6 +6534,12 @@
           "unique_clones": 0,
           "unique_views": 0,
           "views": 0
+        },
+        "2026-09-08": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
         }
       }
     },
@@ -5953,6 +6547,13 @@
       "active": true,
       "counters": {
         "2026-09-07": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
+        },
+        "2026-09-08": {
           "forks": 0,
           "open_issues": 0,
           "release_downloads": 0,
@@ -5976,10 +6577,12 @@
         "url": "https://github.com/anuraagbarde/rocky"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -6077,6 +6680,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -6095,10 +6705,12 @@
         "url": "https://github.com/anuraagbarde/socket-group-chat-py"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -6196,6 +6808,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -6221,10 +6840,25 @@
             "title": "Overview",
             "uniques": 1
           }
+        ],
+        "2026-09-08": [
+          {
+            "count": 1,
+            "path": "/anuraagbarde/splitwise-lld",
+            "title": "Overview",
+            "uniques": 1
+          }
         ]
       },
       "referrer_snapshots": {
         "2026-09-07": [
+          {
+            "count": 1,
+            "referrer": "Google",
+            "uniques": 1
+          }
+        ],
+        "2026-09-08": [
           {
             "count": 1,
             "referrer": "Google",
@@ -6328,6 +6962,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -6346,10 +6987,12 @@
         "url": "https://github.com/anuraagbarde/system-design-primer"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -6447,6 +7090,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -6465,10 +7115,12 @@
         "url": "https://github.com/anuraagbarde/thesecretlivesofdata"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -6566,6 +7218,13 @@
           "release_downloads": 0,
           "stars": 0,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 0,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -6574,7 +7233,7 @@
         "fork": true,
         "forks": 0,
         "full_name": "anuraagbarde/trafficfolio",
-        "language": null,
+        "language": "Python",
         "name": "trafficfolio",
         "open_issues": 0,
         "private": false,
@@ -6584,10 +7243,12 @@
         "url": "https://github.com/anuraagbarde/trafficfolio"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-25": {
@@ -6673,6 +7334,12 @@
           "unique_clones": 0,
           "unique_views": 0,
           "views": 0
+        },
+        "2026-09-08": {
+          "clones": 0,
+          "unique_clones": 0,
+          "unique_views": 0,
+          "views": 0
         }
       }
     },
@@ -6680,6 +7347,13 @@
       "active": true,
       "counters": {
         "2026-09-07": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
+        },
+        "2026-09-08": {
           "forks": 0,
           "open_issues": 0,
           "release_downloads": 0,
@@ -6703,10 +7377,12 @@
         "url": "https://github.com/anuraagbarde/tt"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -6804,6 +7480,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 1
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 1
         }
       },
       "metadata": {
@@ -6822,10 +7505,12 @@
         "url": "https://github.com/anuraagbarde/videoChat_peerJSbackend"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -6923,6 +7608,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -6941,10 +7633,12 @@
         "url": "https://github.com/anuraagbarde/web-player-demos"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -7042,6 +7736,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -7060,10 +7761,12 @@
         "url": "https://github.com/anuraagbarde/youtube-api-demo-frontend"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-14": {
@@ -7161,6 +7864,13 @@
           "release_downloads": 0,
           "stars": 1,
           "subscribers": 0
+        },
+        "2026-09-08": {
+          "forks": 0,
+          "open_issues": 0,
+          "release_downloads": 0,
+          "stars": 1,
+          "subscribers": 0
         }
       },
       "metadata": {
@@ -7179,10 +7889,12 @@
         "url": "https://github.com/anuraagbarde/zipline"
       },
       "path_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "referrer_snapshots": {
-        "2026-09-07": []
+        "2026-09-07": [],
+        "2026-09-08": []
       },
       "traffic": {
         "2026-08-23": {
@@ -7272,6 +7984,6 @@
       }
     }
   },
-  "updated_at": "2026-09-07T12:55:14Z",
+  "updated_at": "2026-09-08T01:11:26Z",
   "version": 1
 }
